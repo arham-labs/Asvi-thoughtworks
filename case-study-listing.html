@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Wed Jul 26 2023 12:11:04 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Jul 28 2023 12:15:46 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64c0c0c64aa4f4832efcbca4" data-wf-site="64ad2300f8eba1208e69a8d1">
 <head>
   <meta charset="utf-8">
@@ -19,7 +19,7 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
-<body>
+<body class="body-3">
   <section class="section-14 wf-section">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="dark-nav-bar w-nav">
       <div class="dark_nav_containor">
@@ -87,23 +87,26 @@
         </div>
       </div>
     </div>
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header---menu drak w-nav">
+    <div data-animation="over-right" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header---menu white w-nav">
       <div class="brix---container-default w-container">
         <div class="brix---header-content-wrapper">
-          <a href="index.html" class="brix---header-logo-link w-nav-brand"><img src="images/asvi_logo.svg" width="150" alt="" class="brix---header-logo"></a>
-          <div class="brix---header-right-col">
-            <nav role="navigation" class="brix---header-nav-menu-wrapper-white w-nav-menu">
-              <ul role="list" class="brix---header-nav-menu-list">
+          <a href="index.html" class="brix---header-logo-link w-nav-brand"><img src="images/asvi_dark_logo.svg" width="150" alt="" class="brix---header-logo primary-logo"></a>
+          <aside class="mobile-slider order-change">
+            <nav role="navigation" class="brix---header-nav-menu-wrapper-white change-order w-nav-menu">
+              <div class="hamburger-menu-icon header-menu"><img src="images/asvi_dark_logo.svg" loading="lazy" alt="" class="image-10">
+                <a href="#" class="w-inline-block"><img src="images/cross.svg" loading="lazy" alt=""></a>
+              </div>
+              <ul role="list" class="brix---header-nav-menu-list chnage-order">
                 <li class="brix---header-nav-list-item">
-                  <a href="#" class="brix---header-nav-link-white w-nav-link">About us</a>
+                  <a href="about-us.html" class="brix---header-nav-link-white dark-text w-nav-link">About us</a>
                 </li>
                 <li class="brix---header-nav-list-item">
                   <div data-hover="true" data-delay="0" class="brix---dropdown-wrapper w-dropdown">
                     <div class="brix---dropdown-toggle-white w-dropdown-toggle">
                       <div class="navigation-text">
-                        <div class="brix---header-nav-link-white">Offerings</div>
+                        <div class="brix---header-nav-link-white dark-text">Offerings</div>
                       </div>
-                      <div class="brix---hidden-on-tablet"><img src="images/line-rounded-chevron-down-white-brix-templates.svg" alt="Chevron Icon - Elements Webflow Library - BRIX Templates" class="brix---dropdown-chevron"></div>
+                      <div class="brix---hidden-on-tablet"><img src="images/nav-icon-dark.svg" alt="" class="brix---dropdown-chevron dark-icon change"></div>
                       <div class="brix---show-on-tablet"><img src="images/line-rounded-chevron-down-black-brix-templates.svg" alt="Icon Rounded Chevron Dark - BRIX Templates" class="brix---dropdown-chevron"></div>
                     </div>
                     <nav class="brix---dropdown-column-wrapper w-dropdown-list">
@@ -119,39 +122,21 @@
                   </div>
                 </li>
                 <li class="brix---header-nav-list-item">
-                  <div data-hover="true" data-delay="0" class="brix---dropdown-wrapper w-dropdown">
-                    <div class="brix---dropdown-toggle-white w-dropdown-toggle">
-                      <div>
-                        <div class="brix---header-nav-link-white navigation-text">Resources</div>
-                      </div>
-                      <div class="brix---hidden-on-tablet"><img src="images/line-rounded-chevron-down-white-brix-templates.svg" alt="Chevron Icon - Elements Webflow Library - BRIX Templates" class="brix---dropdown-chevron"></div>
-                      <div class="brix---show-on-tablet"><img src="images/line-rounded-chevron-down-black-brix-templates.svg" alt="Icon Rounded Chevron Dark - BRIX Templates" class="brix---dropdown-chevron"></div>
-                    </div>
-                    <nav class="brix---dropdown-column-wrapper w-dropdown-list">
-                      <div class="brix---dropdown-card">
-                        <div class="brix---dropdown-pd">
-                          <div class="w-layout-grid brix---dropdown-links-grid">
-                            <a href="#" class="brix---dropdown-link w-dropdown-link">Case study</a>
-                            <a href="#" class="brix---dropdown-link w-dropdown-link">White paper</a>
-                          </div>
-                        </div>
-                      </div>
-                    </nav>
-                  </div>
+                  <a href="case-study-listing.html" aria-current="page" class="brix---header-nav-link-white dark-text w-nav-link w--current">Case studies</a>
                 </li>
                 <li class="brix---header-nav-list-item-show-in-mbl">
                   <a href="#" class="brix---btn-primary-small w-button">Get started</a>
                 </li>
               </ul>
             </nav>
-            <div class="brix---hamburger-menu-wrapper w-nav-button">
-              <div class="brix---hamburger-menu-bar-top-white"></div>
-              <div class="brix---hamburger-menu-bar-bottom-white"></div>
+            <div class="brix---hamburger-menu-wrapper dark w-nav-button">
+              <div class="brix---hamburger-menu-bar-top-white dark"></div>
+              <div class="brix---hamburger-menu-bar-bottom-white dark"></div>
             </div>
             <div class="brix---btn-header-hidden-on-mbl">
               <a href="#" class="brix---btn-primary-small w-button">Get started</a>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </div>
@@ -235,9 +220,7 @@
           <a href="index.html" class="link-block w-inline-block"><img src="images/asvi-color-logo.svg" loading="lazy" width="130" alt="" class="image-3"></a>
           <div class="brix---mg-bottom-32px-4">
             <div class="brix---color-neutral-805"><img src="images/phone-icon-1.svg" loading="lazy" height="27" width="24" alt="" class="asvi---footer-icon">
-              <a href="tel:123" class="link-block-2 w-inline-block">
-                <p class="asvi---body-2 asvi---footer-text">+91 99990 00676</p>
-              </a>
+              <p class="asvi---body-2 asvi---footer-text">+91 99990 00676</p>
             </div>
             <div class="brix---color-neutral-805"><img src="images/email-icon-1.svg" loading="lazy" height="27" width="26" alt="" class="asvi---footer-icon">
               <p class="asvi---body-2">snigdhatripathi@asvithoughtworks.com</p>
@@ -248,38 +231,35 @@
           </div>
         </div>
         <div>
+          <div class="brix---footer-col-title">Company</div>
+          <ul role="list" class="brix---footer-list-wrapper">
+            <li class="brix---footer-list-item">
+              <a href="about-us.html" class="brix---footer-link">About Us</a>
+            </li>
+            <li class="brix---footer-list-item">
+              <a href="#" class="brix---footer-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
           <div class="brix---footer-col-title">Offerings</div>
           <ul role="list" class="brix---footer-list-wrapper">
             <li class="brix---footer-list-item">
               <a href="fractional-hr.html" class="brix---footer-link">Fractional HR</a>
             </li>
             <li class="brix---footer-list-item">
-              <a href="ceo-advisory.html" class="brix---footer-link">COE advisory</a>
+              <a href="ceo-advisory.html" class="brix---footer-link">COE Advisory</a>
             </li>
           </ul>
         </div>
         <div>
-          <div class="brix---footer-col-title">Support</div>
+          <div class="brix---footer-col-title">Resources</div>
           <ul role="list" class="brix---footer-list-wrapper">
             <li class="brix---footer-list-item">
-              <a href="case-study-listing.html" aria-current="page" class="brix---footer-link w--current">Case Study</a>
-            </li>
-            <li class="brix---footer-list-item">
-              <a href="#" class="brix---footer-link">White Paper</a>
+              <a href="case-study-listing.html" aria-current="page" class="brix---footer-link w--current">Case Studies</a>
             </li>
             <li class="brix---footer-list-item"></li>
             <li class="brix---footer-list-item"></li>
-          </ul>
-        </div>
-        <div>
-          <div class="brix---footer-col-title">Product</div>
-          <ul role="list" class="brix---footer-list-wrapper">
-            <li class="brix---footer-list-item">
-              <a href="#" class="brix---footer-link">About Us</a>
-            </li>
-            <li class="brix---footer-list-item">
-              <a href="#" class="brix---footer-link">Contact Us</a>
-            </li>
           </ul>
         </div>
       </div>
