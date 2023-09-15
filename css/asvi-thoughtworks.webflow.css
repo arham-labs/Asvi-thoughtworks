@@ -1595,6 +1595,10 @@
   display: block;
 }
 
+.process-card.data {
+  padding: 0;
+}
+
 .process-card {
   width: 300px;
   background-color: #fdefee;
