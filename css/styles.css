@@ -1,6 +1,78 @@
+/* Home Page */
 
+.secure-btn {
+    background: #E85046;
+    padding: 16px 20px 16px 20px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fold3-main-container{
+    padding: 120px 0;
+    background: #FEF6F6;
+    margin: 100px 0;
+}
+.fold-3-header{
+    text-align: center;
+    margin: 0 auto 70px !important;
+}
+.fold-3-container{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    background-color: white;
+    width: 84%;
+    margin: 0 auto;
+    box-shadow : 0px 10px 30px 0px #0000000D;
+
+}
+.flex-direction{
+    flex-direction: row-reverse;
+}
+.fold-3-sub-sec-1{
+    padding: 60px 0 60px 50px;
+    width: 50%;
+}
+.sub-sec-header{
+    font-size: 22px;
+    color:  #50265C;
+    font-weight: 600;
+    margin-bottom: 28px;
+    display: block;
+}
+.sub-sec-container{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.sub-sec-container span {
+    font-size: 15px;
+}
+.image-con{
+    width: 50%;
+}
+.fold-3-image{
+    width: auto;
+}
+.mb{
+    margin-bottom: 50px;
+}
+
+
+/* Fractional and Ceo Advisory Page */
 .hr-container{
     margin-top: 50px;
+}
+.hr-layout{
+    gap: 0 !important;
 }
 .hr-header{
     width: 70%;
@@ -38,7 +110,48 @@
     width: 70px;
 }
 
+/* Mobile */
 @media screen and (max-width: 767px){
+    
+    .secure-btn {
+        padding: 12px 16px 12px 16px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .fold3-main-container{
+        padding: 60px 0;
+    }
+    .fold-3-header{
+        text-align: left;
+        width: 84%;
+        margin-bottom: 30px !important;
+        font-size: 22px;
+    }
+
+    .fold-3-container{
+        flex-direction: column-reverse;
+    }
+
+    .fold-3-sub-sec-1{
+        padding: 22px;
+        width: 100%;
+    }
+
+    .fold-3-sub-sec-1 span{
+        font-size: 20px;
+    }
+    .sub-sec-container span {
+        font-size: 13px;
+    }
+
+    .image-con{
+      width: 100%;
+    }
+    .mb{
+        margin-bottom: 30px;
+    }
+
     .hr-main-header{
         padding: 60px 0 !important;
     }
@@ -75,7 +188,31 @@
         width: auto !important;
     }
 }
+
+/* Tablet and small Desktop */
 @media screen and (min-width: 768px) and (max-width: 1299px){
+
+    .fold-3-header{
+        font-size: 33px;
+    }
+    .fold-3-container{
+        width: 87%;
+    }
+
+    .fold-3-sub-sec-1{
+        padding: 40px;
+    }
+
+    .fold-3-sub-sec-1 span{
+        font-size: 20px;
+    }
+    .sub-sec-container span {
+        font-size: 13px;
+    }
+    .fold-3-image{
+      height: 320px;
+    }
+
     .hr-layout{
        width: 88% !important;
        margin:  0 auto !important;   
@@ -93,3 +230,18 @@
 
 
 }
+
+/* Extra Large Desktop */
+@media screen and (min-width: 1600px){
+    .fold-3-sub-sec-1{
+        padding: 70px 0 70px 70px;
+    }
+    .fold-3-sub-sec-1 span{
+        font-size: 29px;
+    }
+    .sub-sec-container span {
+        font-size: 17px;
+    }
+
+}
+
