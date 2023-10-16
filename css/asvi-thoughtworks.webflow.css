@@ -3507,10 +3507,10 @@
 }
 
 .div-block-82 {
-  grid-column-gap: 40px;
-  justify-content: center;
+  grid-gap: 40px;
   margin-bottom: 40px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .div-block-82.sdsdsdsdd {
@@ -6661,11 +6661,6 @@
     width: 100%;
     margin-top: 12px;
     font-size: 18px;
-  }
-
-  .div-block-82 {
-    grid-row-gap: 32px;
-    flex-direction: column;
   }
 
   ._5-card-block {
