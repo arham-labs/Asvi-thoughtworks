@@ -1,0 +1,238 @@
+.main-container {
+    padding: 80px 0;
+}
+
+.wrapper {
+    width: 84%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.detail-fold-1 {
+    background-color: #FEF4F4;
+    color: #50265C;
+}
+
+.detail-fold-1 h1 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.intro-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.intro-content {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.intro-list-con {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-content:not(:first-child) {
+    margin-top: 30px;
+}
+
+.intro-content span {
+    font-size: 42px;
+    display: block;
+    margin-right: 20px;
+    color: #50265C;
+    font-weight: 700;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.intro-content p {
+    line-height: 1.5em;
+    font-size: 20px;
+    width: 95%;
+    margin-bottom: 0;
+}
+
+.intro-banner-image {
+    width: 50%;
+    height: 363px;
+}
+
+.banner-image-sec-1 {
+    background: url('../images/intro-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-image-sec-2 {
+    background: url('../images/intro-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.intro-banner-image img {
+    width: 100%;
+}
+
+.right-icon {
+    position: relative;
+    right: 80px;
+    top: -140px;
+    width: 5%;
+}
+
+.right-icon img {
+    width: 145px;
+    height: 145px;
+    max-width: none;
+}
+
+.div-block-64 {
+    color: white !important;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+    background-color: white;
+    padding: 36px 42px 36px 42px;
+    color: #50265C;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-image {
+    background-color: #50265C;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.card-sec span {
+    font-size: 16px;
+}
+
+.card-sec p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.desc {
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 60px 0;
+    }
+
+    .wrapper {
+        width: 88%;
+    }
+
+    .detail-fold-1 h1 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .intro-content p {
+        font-size: 14px;
+    }
+
+    .intro-con {
+        flex-direction: column;
+    }
+
+    .intro-content {
+        width: 100%;
+    }
+    .intro-list-con{
+        width: 100%;
+    }
+
+    .intro-banner-image {
+        width: 100%;
+        height: 229px;
+    }
+
+    .aspect {
+        height: 200px;
+    }
+
+    .banner-image-sec-1 {
+        background: url('../images/home-hero-collatrel.png');
+        background-size: contain;
+    }
+
+    .banner-image-sec-2 {
+        background: url('../images/fold3_with_overlay-p-1080.png');
+        background-size: contain;
+    }
+
+    .right-icon {
+        display: none;
+    }
+
+    .div-block-64 h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .testimonial-card {
+        padding: 30px 24px 30px 24px;
+        width: 300px;
+    }
+
+    .card-container {
+        gap: 18px;
+        margin-bottom: 20px;
+
+    }
+
+    .card-image {
+        width: 54px;
+        height: 54px;
+    }
+
+    .card-sec span {
+        font-size: 14px;
+    }
+
+    .card-sec p {
+        font-size: 10px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .right-icon {
+        top: -200px;
+        right: 75px;
+    }
+
+    .right-icon img {
+        width: 165px;
+        height: 165px;
+    }
+
+}

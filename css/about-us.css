@@ -1,0 +1,222 @@
+.main-container {
+    padding: 100px 0;
+}
+
+.aboutus-fold-2 h1 {
+    max-width: none;
+    margin-bottom: 80px !important;
+    font-weight: 600;
+}
+
+.welcome-container {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.welcome-sub-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.welcome-sec {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.welcome-sec span {
+    color: #50265C;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.welcome-sec p {
+    font-size: 17px;
+    line-height: 1.5em;
+    width: 95%;
+    color: #50265C;
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcome-banner {
+    width: 50%;
+}
+
+.welcome-sub-con {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.sub-sec {
+    padding: 30px;
+    background-color: #FEF6F6;
+    width: 50%;
+    height: 147px;
+}
+
+.sub-sec span {
+    font-size: 17px;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 600;
+    color: #50265C;
+
+}
+
+.sub-sec p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #50265C;
+    line-height: 1.5em;
+}
+
+.aboutus-fold-4 {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.aboutus-fold-4 h1 {
+    max-width: none;
+    width: 80%;
+    margin: 0 auto 20px !important;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+.aboutus-fold-4 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5em;
+    color: #50265C;
+    margin-bottom: 0;
+}
+
+.savings-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.savings-sec {
+    padding: 60px 42px 42px 42px;
+    background: #FEF6F6;
+    position: relative;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    background-color: #50265C;
+    color: #F4A7A3;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.savings-sec span {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 20px;
+    color: #E85046;
+}
+
+.savings-sec p {
+    color: #50265C;
+    line-height: 1.5em;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .main-container {
+        padding: 60px 0;
+    }
+
+    .aboutus-fold-2 h1 {
+        margin-bottom: 35px !important;
+    }
+
+    .welcome-container {
+        width: 88%;
+    }
+
+    .welcome-sub-container {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .welcome-sec {
+        width: 100%;
+    }
+
+    .welcome-banner {
+        width: 100%;
+    }
+
+    .welcome-sub-con {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .sub-sec {
+        width: 100%;
+    }
+
+    .sub-sec span {
+        font-size: 18px;
+    }
+
+    .sub-sec p {
+        font-size: 14px;
+    }
+
+    .aboutus-fold-4 h1 {
+        text-align: left;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .aboutus-fold-4 p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .savings-container {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .savings-sec {
+        height: 260px;
+        padding: 80px 10px 42px 10px;
+    }
+
+    .savings-sec span {
+        margin-bottom: 30px;
+    }
+
+    .savings-sec p {
+        text-align: center;
+    }
+
+
+
+}
