@@ -82,7 +82,6 @@
 .brix---header-nav-list-item-show-in-mbl {
   margin-bottom: 0;
   padding-left: 32px;
-  display: none;
 }
 
 .brix---header-nav-link-white {
@@ -4501,11 +4500,6 @@
     max-width: 243px;
   }
 
-  .header---menu {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   .uui-heroheader21_content {
     padding-left: 0;
   }
@@ -5174,9 +5168,9 @@
     display: block;
   }
 
-  .brix---btn-primary-small.hide {
+  /* .brix---btn-primary-small.hide {
     display: none;
-  }
+  } */
 
   .brix---hamburger-menu-bar-bottom-white {
     width: 32px;

@@ -1,0 +1,27 @@
+.list-image-1 {
+    background: url('../images/case-study-detail.png');
+}
+
+.list-image-2 {
+    background: url('../images/home-hero-collatrel.png');
+}
+
+.list-image-3 {
+    background: url('../images/welcome-banner.png');
+}
+
+.list-image-4 {
+    background: url('../images/workforce-banner.png');
+}
+
+
+.bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 479px){
+    .bg-image{
+        height: 176px;
+    }
+}
