@@ -46,6 +46,7 @@
     font-weight: 600;
     margin-bottom: 28px;
     display: block;
+    font-family: 'IBM Plex Sans';
 }
 .sub-sec-container{
     display: flex;
@@ -53,8 +54,14 @@
     gap: 10px;
     margin-bottom: 15px;
 }
+.sub-sec-container img{
+    position: relative;
+    top: -3px;
+}
 .sub-sec-container span {
     font-size: 15px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
 }
 .image-con{
     width: 50%;
@@ -148,6 +155,9 @@
     }
     .sub-sec-container span {
         font-size: 13px;
+    }
+    .sub-sec-container img{
+        top: 0;
     }
 
     .image-con{
