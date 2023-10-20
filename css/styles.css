@@ -12,6 +12,7 @@
     gap: 10px;
     text-decoration: none;
     cursor: pointer;
+    transition: background-color .3s, transform .3s, color .3s;
 }
 
 .secure-btn:hover {
@@ -19,6 +20,7 @@
     -webkit-text-fill-color: inherit;
     background-color: rgba(232, 80, 70, .54);
     background-clip: border-box;
+
 }
 
 .fold3-main-container {
@@ -146,6 +148,10 @@
     position: relative;
     left: -10px;
     width: 70px;
+}
+
+.hr-sub-header{
+    color: #72517E;
 }
 
 /* Mobile */

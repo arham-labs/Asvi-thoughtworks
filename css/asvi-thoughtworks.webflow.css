@@ -1076,11 +1076,9 @@
 
 .left-content {
   width: 40%;
-  height: 100%;
   max-width: none;
   align-self: center;
   margin-bottom: 0;
-  padding-top: 10%;
   padding-bottom: 0;
 }
 
@@ -1182,6 +1180,7 @@
   margin-left: 0%;
   margin-right: 0%;
   display: flex;
+  align-items: center;
 }
 
 .floating-card {
@@ -1603,7 +1602,7 @@
 .process-card {
   background-color: #fdefee;
   flex: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .process-heading {
@@ -1616,7 +1615,7 @@
 }
 
 .process-description {
-  color: #666;
+  color: #72517e;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -1932,11 +1931,9 @@
 }
 
 .sub-text {
-  width: 700px;
   color: #72517e;
   text-align: center;
   align-items: flex-start;
-  margin: auto 10% 5%;
   font-family: Roboto, sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -1948,7 +1945,6 @@
   width: auto;
   text-align: center;
   margin-bottom: 0;
-  display: none;
 }
 
 .div-block-42 {
@@ -2013,7 +2009,7 @@
 }
 
 .fraction-body-3 {
-  color: #666;
+  color: #72517e;
   text-align: center;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -3412,30 +3408,26 @@
 }
 
 .image-1120 {
-  margin-top: -10px;
-  margin-right: 0;
-  padding: 0 0 0 193px;
+  top: 16px;
+  right: 10px;
   position: absolute;
 }
 
 .image-1121 {
-  margin-top: -7px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 225px;
+  top: 16px;
+  right: 10px;
   position: absolute;
 }
 
 .image-1122 {
-  margin-top: -11px;
-  padding-top: 0;
-  padding-left: 196px;
+  top: 16px;
+  right: 10px;
   position: absolute;
 }
 
 .image-1123 {
-  margin-top: -8px;
-  margin-left: 262px;
+  top: 16px;
+  right: 10px;
   position: absolute;
 }
 
@@ -3444,14 +3436,14 @@
 }
 
 .image-1124 {
-  margin-top: -11px;
-  margin-left: 216px;
+  top: 16px;
+  right: 10px;
   position: absolute;
 }
 
 .image-1125 {
-  margin-top: -11px;
-  margin-left: 231px;
+  top: 16px;
+  right: 10px;
   position: absolute;
 }
 
@@ -4132,7 +4124,6 @@
 
   .sub-text.center {
     width: auto;
-    max-width: 860px;
   }
 
   .div-block-42 {
@@ -6613,38 +6604,36 @@
   }
 
   .image-1120 {
-    max-width: 81%;
-    margin-top: -6px;
-    margin-left: 3px;
-    padding-left: 136px;
+    top: 10px;
+    right: 10px;
   }
 
   .image-1121 {
-    max-width: 84.5%;
-    margin-top: -7px;
-    padding-left: 160px;
+    top: 10px;
+    right: 10px;
   }
 
   .image-1122 {
-    max-width: 84%;
-    margin-top: -10px;
-    margin-left: -3px;
-    padding-left: 140px;
+    top: 10px;
+    right: 10px;
   }
 
-  .image-1123.ssacsascas {
-    margin-top: -8px;
-    margin-left: 189px;
+  .image-1123 {
+    top: 10px;
+    right: 10px;
   }
 
-  .image-1124.dasd {
-    margin-top: -11px;
-    margin-left: 156px;
+  .image-1124 {
+    top: 10px;
+    right: 10px;
   }
 
   .image-1125 {
-    margin-left: 165px;
+    top: 10px;
+    right: 10px;
   }
+
+  
 
   .dssadcas {
     padding-top: 60px;

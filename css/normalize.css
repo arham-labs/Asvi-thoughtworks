@@ -413,6 +413,7 @@ th {
   margin-top: 50px;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
 }
 
 .view-all-cta span {
@@ -451,17 +452,19 @@ th {
 }
 
 .explore-content span {
-  font-size: 33px;
+  font-size: 38px;
   line-height: 1.4em;
   margin-bottom: 20px;
   display: block;
   font-family: 'IBM Plex Sans';
   width: 80%;
+  font-weight: 600;
 }
 
 .explore-content p {
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
 }
 
 @media screen and (max-width: 1024px){
