@@ -2648,7 +2648,7 @@
 .homepage-body-2 {
   color: #ccc;
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -3296,12 +3296,6 @@
   bottom: 0%;
   left: 0%;
   right: 0%;
-}
-
-.icon-of-homepage {
-  z-index: 10;
-  position: absolute;
-  right: 0;
 }
 
 .bullet-description {

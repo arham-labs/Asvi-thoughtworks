@@ -2,7 +2,7 @@
 
 .secure-btn {
     background: #E85046;
-    padding: 16px 20px 16px 20px;
+    padding: 18px 24px;
     text-transform: uppercase;
     color: white;
     font-size: 16px;
@@ -14,101 +14,126 @@
     cursor: pointer;
 }
 
-.fold3-main-container{
+.secure-btn:hover {
+    color: #fff;
+    -webkit-text-fill-color: inherit;
+    background-color: rgba(232, 80, 70, .54);
+    background-clip: border-box;
+}
+
+.fold3-main-container {
     padding: 120px 0;
     background: #FEF6F6;
     margin: 100px 0;
 }
-.fold-3-header{
+
+.fold-3-header {
     text-align: center;
     margin: 0 auto 70px !important;
 }
-.fold-3-container{
+
+.fold-3-container {
     display: flex;
     align-items: center;
     margin-top: 30px;
     background-color: white;
     width: 84%;
     margin: 0 auto;
-    box-shadow : 0px 10px 30px 0px #0000000D;
+    box-shadow: 0px 10px 30px 0px #0000000D;
 
 }
-.flex-direction{
+
+.flex-direction {
     flex-direction: row-reverse;
 }
-.fold-3-sub-sec-1{
+
+.fold-3-sub-sec-1 {
     padding: 60px 0 60px 50px;
     width: 50%;
 }
-.sub-sec-header{
-    font-size: 22px;
-    color:  #50265C;
+
+.sub-sec-header {
+    font-size: 26px;
+    color: #50265C;
     font-weight: 600;
     margin-bottom: 28px;
     display: block;
     font-family: 'IBM Plex Sans';
 }
-.sub-sec-container{
+
+.sub-sec-container {
     display: flex;
     align-items: start;
     gap: 10px;
     margin-bottom: 15px;
 }
-.sub-sec-container img{
+
+.sub-sec-container img {
     position: relative;
     top: -3px;
 }
+
 .sub-sec-container span {
-    font-size: 15px;
-    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    color: #72517E;
 }
-.image-con{
+
+.image-con {
     width: 50%;
 }
-.fold-3-image{
+
+.fold-3-image {
     width: auto;
 }
-.mb{
+
+.mb {
     margin-bottom: 50px;
 }
 
-.choose-card-container{
+.choose-card-container {
     width: 84%;
     margin: 0 auto;
 }
 
 
 /* Fractional and Ceo Advisory Page */
-.hr-container{
+.hr-container {
     margin-top: 50px;
 }
-.hr-layout{
+
+.hr-layout {
     gap: 0 !important;
 }
-.hr-header{
+
+.hr-header {
     width: 70%;
     line-height: 1.4em;
     margin-bottom: 5px;
 }
-.sub-header{
+
+.sub-header {
     font-size: 20px;
     color: #F4A7A3;
     font-weight: 600;
     margin-bottom: 35px;
     display: block;
 }
-.access-sub-container{
+
+.access-sub-container {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     gap: 30px;
 }
-.access-sub-section{
+
+.access-sub-section {
     display: flex;
     align-items: center;
     gap: 2px;
 }
-.access-sub-section span{
+
+.access-sub-section span {
     font-size: 18px;
     color: #50265C;
     font-family: 'Roboto', sans-serif;
@@ -116,58 +141,63 @@
     line-height: 1.5em;
 
 }
-.access-image{
+
+.access-image {
     position: relative;
     left: -10px;
     width: 70px;
 }
 
 /* Mobile */
-@media screen and (max-width: 767px){
-    
+@media screen and (max-width: 767px) {
+
     .secure-btn {
         padding: 12px 16px 12px 16px;
         font-size: 15px;
         margin-top: 20px;
     }
 
-    .fold3-main-container{
+    .fold3-main-container {
         padding: 60px 0;
     }
-    .fold-3-header{
+
+    .fold-3-header {
         text-align: left;
         width: 84%;
         margin-bottom: 30px !important;
         font-size: 22px;
     }
 
-    .fold-3-container{
+    .fold-3-container {
         flex-direction: column-reverse;
     }
 
-    .fold-3-sub-sec-1{
+    .fold-3-sub-sec-1 {
         padding: 22px;
         width: 100%;
     }
 
-    .fold-3-sub-sec-1 span{
+    .fold-3-sub-sec-1 span {
         font-size: 20px;
     }
+
     .sub-sec-container span {
         font-size: 13px;
     }
-    .sub-sec-container img{
+
+    .sub-sec-container img {
         top: 0;
     }
 
-    .image-con{
-      width: 100%;
+    .image-con {
+        width: 100%;
     }
-    .mb{
+
+    .mb {
         margin-bottom: 30px;
     }
 
-    .choose-card-container{
+    .choose-card-container {
         width: 90%;
     }
 
@@ -175,39 +205,46 @@
         grid-row-gap: 32px;
         flex-direction: column;
         justify-content: center;
-      }
+    }
 
-    .hr-main-header{
+    .hr-main-header {
         padding: 60px 0 !important;
     }
-    .hr-header{
+
+    .hr-header {
         width: 100%;
         text-align: left !important;
         margin-bottom: 5px !important;
         font-size: 24px !important;
     }
-    .hr-sub-header{
+
+    .hr-sub-header {
         text-align: left !important;
     }
-    .hr-container{
+
+    .hr-container {
         margin-top: 10px;
     }
-    .sub-header{
-      font-size: 18px;
-      margin-bottom: 20px;
+
+    .sub-header {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
-    .access-sub-container{
+
+    .access-sub-container {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    .access-sub-section span{
+
+    .access-sub-section span {
         font-size: 15px;
     }
 
-    .access-image{
+    .access-image {
         width: 50px;
     }
-    .hr-layout{
+
+    .hr-layout {
         gap: 10px !important;
         margin: 5% 5% !important;
         width: auto !important;
@@ -215,41 +252,47 @@
 }
 
 /* Tablet and small Desktop */
-@media screen and (min-width: 768px) and (max-width: 1299px){
+@media screen and (min-width: 768px) and (max-width: 1299px) {
 
-    .fold-3-header{
+    .fold-3-header {
         font-size: 33px;
     }
-    .fold-3-container{
+
+    .fold-3-container {
         width: 87%;
     }
 
-    .fold-3-sub-sec-1{
+    .fold-3-sub-sec-1 {
         padding: 40px;
     }
 
-    .fold-3-sub-sec-1 span{
+    .fold-3-sub-sec-1 span {
         font-size: 20px;
     }
+
     .sub-sec-container span {
         font-size: 13px;
     }
-    .fold-3-image{
-      height: 320px;
+
+    .fold-3-image {
+        height: 320px;
     }
 
-    .hr-layout{
-       width: 88% !important;
-       margin:  0 auto !important;   
+    .hr-layout {
+        width: 88% !important;
+        margin: 0 auto !important;
     }
-    .hr-header{
+
+    .hr-header {
         width: 90%;
     }
-    .access-sub-container{
+
+    .access-sub-container {
         grid-template-columns: 2fr 2fr;
         gap: 20px;
     }
-    .hr-header{
+
+    .hr-header {
         font-size: 33px;
     }
 
@@ -257,16 +300,17 @@
 }
 
 /* Extra Large Desktop */
-@media screen and (min-width: 1600px){
-    .fold-3-sub-sec-1{
+@media screen and (min-width: 1600px) {
+    .fold-3-sub-sec-1 {
         padding: 70px 0 70px 70px;
     }
-    .fold-3-sub-sec-1 span{
+
+    .fold-3-sub-sec-1 span {
         font-size: 29px;
     }
+
     .sub-sec-container span {
         font-size: 17px;
     }
 
 }
-
