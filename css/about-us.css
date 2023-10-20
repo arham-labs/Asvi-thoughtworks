@@ -34,7 +34,7 @@
 }
 
 .welcome-sec p {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.5em;
     width: 95%;
     color: #50265C;
@@ -59,7 +59,7 @@
 }
 
 .sub-sec span {
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 20px;
     display: block;
     font-weight: 600;
@@ -69,9 +69,9 @@
 
 .sub-sec p {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-    color: #50265C;
+    color: #72517E;
     line-height: 1.5em;
 }
 
@@ -91,7 +91,7 @@
 
 .aboutus-fold-4 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     line-height: 1.5em;
     color: #50265C;
@@ -122,7 +122,8 @@
     background-color: #50265C;
     color: #F4A7A3;
     padding: 8px 10px;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .savings-sec span {
@@ -137,7 +138,7 @@
 .savings-sec p {
     color: #50265C;
     line-height: 1.5em;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
@@ -216,6 +217,9 @@
     .savings-sec p {
         text-align: center;
     }
+    .label {
+        font-size: 14px;
+     }
 
 
 
