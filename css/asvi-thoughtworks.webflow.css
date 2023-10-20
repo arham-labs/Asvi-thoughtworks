@@ -3128,7 +3128,9 @@
 
 .information-container {
   margin-top: 0;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-text {
@@ -3149,10 +3151,6 @@
 
 .link-block-3:hover {
   color: #e85046;
-}
-
-.link-box {
-  margin-bottom: 20px;
 }
 
 .footer-link---for-page {
@@ -3526,7 +3524,7 @@
 .div-block-84 {
   width: 86%;
   margin: 0 auto;
- 
+
 }
 
 
@@ -3541,7 +3539,7 @@
 
 .process-5-card {
   margin-bottom: 40px;
-   display: grid;
+  display: grid;
   gap: 15px;
   margin-bottom: 40px;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -5170,6 +5168,27 @@
   .brix---header-logo-3 {
     max-width: 90%;
   }
+
+  .footer---section---address {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .information-container {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .location {
+    position: relative;
+    left: 10px;
+  }
+
+  .footer-text {
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5506,7 +5525,7 @@
   }
 
   .brix---footer-col-title.cat.dog {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .brix---footer-link {
@@ -6512,10 +6531,6 @@
 
   .info---div {
     width: auto;
-  }
-
-  .link-box {
-    margin-bottom: 24px;
   }
 
   .bullet-text {
