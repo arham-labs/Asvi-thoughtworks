@@ -36,7 +36,7 @@
   background-color: #e85046;
   border-radius: 0;
   justify-content: center;
-  padding: 18px 24px;
+  padding: 14px 20px;
   font-family: IBM Plex Sans, sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -89,8 +89,8 @@
   color: #fff;
   letter-spacing: 1.5px;
   padding: 0;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 20px;
   transition: opacity .3s, color .3s;
 }
@@ -3970,7 +3970,7 @@
   }
 
   .brix---header-nav-link-white {
-    font-size: 17px;
+    font-size: 16px;
     display: inline;
   }
 
@@ -4497,7 +4497,7 @@
   }
 
   .brix---header-nav-link-white {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .brix---hidden-on-tablet {
