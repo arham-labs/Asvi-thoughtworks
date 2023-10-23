@@ -3902,7 +3902,6 @@
 
 .new {
   width: 177px;
-  height: 55px;
 }
 
 .div-block-87 {
@@ -4645,8 +4644,9 @@
   }
 
   .brix---dropdown-link:focus,
-  .brix---dropdown-link:visited {
-    color: #72517e;
+  .brix---dropdown-link:visited,
+  .brix---dropdown-link:hover {
+    color: #50265c;
   }
 
   .brix---dropdown-pd {
@@ -7111,5 +7111,8 @@
   }
   .div-block-24{
     width: 50%;
+  }
+  .nw-logo{
+    width: 112px;
   }
 }
