@@ -45,12 +45,12 @@
   transition: background-color .3s, transform .3s, color .3s;
 }
 
-/* .brix---btn-primary-small:hover {
+.brix---btn-primary-small:hover {
   color: #fff;
   -webkit-text-fill-color: inherit;
   background-color: rgba(232, 80, 70, .54);
   background-clip: border-box;
-} */
+}
 
 .brix---btn-header-hidden-on-mbl {
   margin-left: 32px;

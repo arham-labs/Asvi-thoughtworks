@@ -425,12 +425,12 @@ th {
   font-weight: 600;
   text-transform: uppercase;
 }
-/* .view-all-cta:hover {
+.view-all-cta:hover {
   color: #fff;
   -webkit-text-fill-color: inherit;
   background-color: rgba(232, 80, 70, .54);
   background-clip: border-box;
-} */
+}
 
 .explore-container {
   background-color: #50265c;
