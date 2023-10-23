@@ -1305,11 +1305,11 @@
 }
 
 .body---caps-tag {
-  color: #f4a7a3;
+  color: #e85046;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 4px;
-  font-family: Roboto, sans-serif;
+  font-family: 'IBM Plex Sans';
   font-weight: 500;
 }
 
@@ -7108,5 +7108,8 @@
 
   .brix---dropdown-link {
     font-size: 16px;
+  }
+  .div-block-24{
+    width: 50%;
   }
 }

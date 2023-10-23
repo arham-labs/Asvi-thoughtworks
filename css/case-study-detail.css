@@ -105,7 +105,7 @@
 }
 
 .intro-content:not(:first-child) {
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
 .intro-content span {
@@ -325,6 +325,11 @@
 
     .header-content {
         flex-direction: row;
+        gap: 20px;
+    }
+    .header-sec{
+        width: 50%;
+        overflow-wrap: break-word;
     }
 
     .header-sec span {
@@ -336,7 +341,6 @@
     }
 
     .header-sec p {
-        font-size: 20px;
         font-weight: 700;
         margin-bottom: 0;
     }
@@ -350,18 +354,18 @@
     }
 
     .detail-fold-1 h1 {
-        font-size: 24px;
-        margin-bottom: 25px;
+        font-size: 28px;
+        margin-bottom: 12px;
     }
 
     .bussiness-content h1 {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 0;
         text-align: left;
     }
 
     .intro-content p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .intro-con {
@@ -379,6 +383,10 @@
     .bussiness-content {
         width: 100%;
     }
+    .intro-content span{
+        font-size: 32px;
+        margin-right: 12px;
+    }
 
     .bussiness-con span {
         font-size: 38px;
@@ -386,7 +394,7 @@
     }
 
     .bussiness-con:not(:first-child) {
-        margin-top: 20px;
+        margin-top: 12px;
     }
 
     .intro-list-con {
@@ -457,7 +465,7 @@
     }
 
     .result-content p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .right-icon {
@@ -468,7 +476,7 @@
 
 
     .div-block-64 h1 {
-        font-size: 24px;
+        font-size: 28px;
         margin: 0;
     }
 
@@ -489,15 +497,15 @@
     }
 
     .card-sec span {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .card-sec p {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .desc {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
