@@ -5795,6 +5795,7 @@
 
   .process-heading {
     margin-bottom: 4%;
+    font-size: 20px;
   }
 
   .process-description {
@@ -5829,7 +5830,7 @@
     margin-bottom: 12%;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.2;
   }
 
@@ -5879,7 +5880,7 @@
   }
 
   .sub-text.center {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .sub-text.cen {

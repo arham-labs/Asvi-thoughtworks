@@ -222,7 +222,7 @@
         width: 100%;
         text-align: left !important;
         margin-bottom: 5px !important;
-        font-size: 24px !important;
+        font-size: 28px !important;
     }
 
     .hr-sub-header {
@@ -234,7 +234,7 @@
     }
 
     .sub-header {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
@@ -244,11 +244,11 @@
     }
 
     .access-sub-section span {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .access-image {
-        width: 50px;
+        width: 60px;
     }
 
     .hr-layout {
