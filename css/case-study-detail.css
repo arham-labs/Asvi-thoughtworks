@@ -197,6 +197,11 @@
     color: white !important;
 }
 
+.bussiness-con p {
+    border-left: 3px solid #50265C;
+    padding-left: 14px;
+}
+
 /* fold 4 */
 
 .result-container {

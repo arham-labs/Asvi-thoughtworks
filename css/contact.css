@@ -29,17 +29,18 @@
     background: #FEF6F6;
     padding: 28px;
     font-family: 'Roboto', sans-serif;
-    height: 100%;
 }
 
 .contact-sec {
     display: flex;
     align-items: flex-start;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #DCDCDC;
-    margin-bottom: 15px;
     gap: 15px;
     color: #50265C;
+}
+.contact-sec:not(:last-child){
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .contact-sec img {

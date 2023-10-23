@@ -5881,6 +5881,9 @@
 
   .sub-text.center {
     font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 14px;
   }
 
   .sub-text.cen {
