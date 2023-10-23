@@ -45,12 +45,12 @@
   transition: background-color .3s, transform .3s, color .3s;
 }
 
-.brix---btn-primary-small:hover {
+/* .brix---btn-primary-small:hover {
   color: #fff;
   -webkit-text-fill-color: inherit;
   background-color: rgba(232, 80, 70, .54);
   background-clip: border-box;
-}
+} */
 
 .brix---btn-header-hidden-on-mbl {
   margin-left: 32px;
@@ -1987,6 +1987,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
+  color: #72517e;
 }
 
 .fractional-hr---banner {
@@ -4645,7 +4646,7 @@
 
   .brix---dropdown-link:focus,
   .brix---dropdown-link:visited {
-    color: #e85046;
+    color: #72517e;
   }
 
   .brix---dropdown-pd {
@@ -5240,25 +5241,6 @@
     margin-bottom: 40px;
   }
 
-  .brix---dropdown-link {
-    color: #50265c;
-  }
-
-  .brix---dropdown-link:hover,
-  .brix---dropdown-link:active,
-  .brix---dropdown-link:focus {
-    color: rgba(0, 0, 0, 0);
-  }
-
-  .brix---dropdown-link:focus-visible {
-    color: rgba(0, 0, 0, 0);
-  }
-
-  .brix---dropdown-link[data-wf-focus-visible],
-  .brix---dropdown-link:visited {
-    color: rgba(0, 0, 0, 0);
-  }
-
   .brix---dropdown-links-grid {
     grid-column-gap: 20px;
     grid-row-gap: 40px;
@@ -5399,11 +5381,13 @@
   }
 
   .asvi---button.asvi---button---secondary {
-    padding: 10px 28px;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 600;
   }
 
   .div-block-3 {
-    padding: 12px 14px;
+    padding: 28px 20px;
   }
 
   .asvi---casestudy {
@@ -5598,7 +5582,7 @@
   }
 
   .card-1 {
-    padding: 20px;
+    padding: 32px 20px;
   }
 
   .cell-2 {
@@ -5931,7 +5915,7 @@
   }
 
   .heading_center.sdsdsdsdsd.padding {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 
   .fold-2-title {
@@ -5943,6 +5927,7 @@
 
   .text-block-6 {
     font-size: 18px;
+    margin-bottom: 24px;
   }
 
   .fractional-hr---banner {
@@ -7117,5 +7102,8 @@
   #w-node-fcbb345b-3881-4520-54ea-3dbdb034476e-97eb0706,
   #w-node-fcbb345b-3881-4520-54ea-3dbdb0344779-97eb0706 {
     grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+  .brix---dropdown-link{
+    font-size: 16px;
   }
 }

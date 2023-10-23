@@ -113,6 +113,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 264px;
 }
 
 .label {
@@ -208,6 +209,7 @@
     .savings-sec {
         height: 260px;
         padding: 80px 10px 42px 10px;
+        height: auto;
     }
 
     .savings-sec span {

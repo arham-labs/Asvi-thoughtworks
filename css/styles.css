@@ -13,6 +13,7 @@
     text-decoration: none;
     cursor: pointer;
     transition: background-color .3s, transform .3s, color .3s;
+    font-family: 'IBM Plex Sans';
 }
 
 .secure-btn:hover {
@@ -158,9 +159,8 @@
 @media screen and (max-width: 767px) {
 
     .secure-btn {
-        padding: 12px 16px 12px 16px;
-        font-size: 15px;
-        margin-top: 20px;
+        font-size: 16px;
+        margin-top: 0;
     }
 
     .fold3-main-container {
@@ -169,12 +169,13 @@
 
     .fold-3-header {
         text-align: left;
-        width: 84%;
+        width: 80%;
         margin-bottom: 30px !important;
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .fold-3-container {
+        width: 80%;
         flex-direction: column-reverse;
     }
 
@@ -184,15 +185,15 @@
     }
 
     .fold-3-sub-sec-1 span {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .sub-sec-container span {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .sub-sec-container img {
-        top: 0;
+        width: 17px;
     }
 
     .image-con {
