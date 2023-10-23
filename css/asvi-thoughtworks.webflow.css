@@ -6177,7 +6177,7 @@
   .about-us-fold-4 {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .div-block-61 {
@@ -6618,7 +6618,7 @@
     right: 10px;
   }
 
-  
+
 
   .dssadcas {
     padding-top: 60px;
@@ -6681,7 +6681,8 @@
 
   .process-55 {
     grid-row-gap: 40px;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .div-block-84 {
@@ -7103,7 +7104,8 @@
   #w-node-fcbb345b-3881-4520-54ea-3dbdb0344779-97eb0706 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
-  .brix---dropdown-link{
+
+  .brix---dropdown-link {
     font-size: 16px;
   }
 }

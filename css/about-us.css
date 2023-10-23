@@ -142,8 +142,12 @@
     font-size: 16px;
     margin-bottom: 0;
 }
-
-
+.desktop-hide{
+    display: none;
+}
+.sm-hide{
+    display: block;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -167,6 +171,14 @@
     .welcome-sec {
         width: 100%;
     }
+    
+    .welcome-sec span{
+        font-size: 22px;
+    }
+    .welcome-sec p{
+        font-size: 16px;
+    }
+
 
     .welcome-banner {
         width: 100%;
@@ -179,20 +191,23 @@
 
     .sub-sec {
         width: 100%;
+        height: auto;
     }
 
     .sub-sec span {
-        font-size: 18px;
+        font-size: 22px;
+        line-height: 1.5em;
     }
 
     .sub-sec p {
-        font-size: 14px;
+        font-size: 16px;
+        margin-bottom: 0;
     }
 
     .aboutus-fold-4 h1 {
         text-align: left;
         width: 100%;
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .aboutus-fold-4 p {
@@ -222,7 +237,17 @@
     .label {
         font-size: 14px;
      }
+     
 
-
-
+}
+@media screen and (max-width: 479px){
+    .sm-pos{
+        transform: translate(25%, 0%);
+    }
+    .desktop-hide{
+        display: block;
+    }
+    .sm-hide{
+        display: none;
+    }
 }
