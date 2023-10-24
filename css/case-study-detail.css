@@ -105,7 +105,7 @@
 }
 
 .intro-content:not(:first-child) {
-    margin-top: 12px;
+    margin-top: 30px;
 }
 
 .intro-content span {
@@ -399,6 +399,9 @@
     }
 
     .bussiness-con:not(:first-child) {
+        margin-top: 12px;
+    }
+    .intro-content:not(:first-child) {
         margin-top: 12px;
     }
 

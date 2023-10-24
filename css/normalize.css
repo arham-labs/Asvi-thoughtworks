@@ -396,7 +396,39 @@ th {
 
 
 /* Form CSS */
+.form-container{
+  display: flex;
+}
+.form-sec{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.form-sec:first-child{
+  margin-right: 12px;
+}
+.form-sec-2{
+  width: 100%;
+  margin-bottom: 25px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
+form input{
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #CCCCCC;
+  outline: 1px solid #CCCCCC;
+  margin: 0;
+}
+.error{
+  color: #DD5858;
+  font-size: 14px;
+  font-family: 'Roboto',sans-serif;
+  margin-top: 5px;
+}
 
 
 
@@ -468,6 +500,24 @@ th {
 }
 
 @media screen and (max-width: 1024px){
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .form-sec{
+    margin-bottom: 0;
+  }
+  .form-sec-2{
+    margin-bottom: 20px;
+  }
+  form input{
+    width: 100%;
+  }
+  .form-sec:first-child{
+    margin-right: 0;
+  }
   .view-all-cta span {
     font-size: 16px;
   }
@@ -486,7 +536,7 @@ th {
     width: 100%;
   }  
   .explore-content p {
-    font-size: 1px;
+    font-size: 16px;
     margin-bottom: 35px;
     text-align: center;
   }

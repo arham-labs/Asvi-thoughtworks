@@ -37,7 +37,7 @@
     font-size: 18px;
     line-height: 1.5em;
     width: 95%;
-    color: #50265C;
+    color: #72517E;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .savings-sec {
-    padding: 60px 42px 42px 42px;
+    padding: 60px 42px 0 42px;
     background: #FEF6F6;
     position: relative;
     height: 240px;

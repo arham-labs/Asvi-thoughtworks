@@ -19,6 +19,7 @@
 .contact-header h1 {
     font-size: 38px;
     margin-bottom: 30px;
+    line-height: normal;
 }
 
 .contact-header p {
@@ -77,6 +78,7 @@ a {
 
     .wrapper {
         width: 88%;
+        margin-top: 20px;
     }
 
     .contact-header {
@@ -92,5 +94,17 @@ a {
 
     .contact-header p {
         font-size: 16px;
+    }
+    .contact-container{
+        padding: 20px 12px;
+    }
+    .contact-details span{
+        font-size: 18px;
+    }
+    .contact-details p {
+        font-size: 14px;
+    }
+    a{
+        font-size: 14px;
     }
 }
