@@ -1,11 +1,22 @@
+let overlay = document.getElementById("overlay");
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
     form.addEventListener("submit", function (e) {
         e.preventDefault();
-        validateForm();
+        const isValid = validateForm(); // Check for validation errors
+        if (isValid) {
+            // Ensure the reCAPTCHA is checked before sending the email
+            const recaptchaCheckbox = grecaptcha.getResponse();
+            if (recaptchaCheckbox !== "") {
+                sendEmail(); // Send email if the form is valid and reCAPTCHA is checked
+            } else {
+                alert("Please complete the reCAPTCHA challenge before submitting the form.");
+            }
+        }
     });
 
-    const inputFields = form.querySelectorAll("input[type='text'], input[type='email'], input[type='tel']");
+    const inputFields = form.querySelectorAll("input[type='text'], input[type='email'], input[type='number']");
     inputFields.forEach(function (input) {
         input.addEventListener("input", function () {
             const errorId = input.id + "-error";
@@ -15,8 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
 });
 
+function recaptchaCallback() {
+    const submitButton = document.getElementById("submit-button");
+    submitButton.removeAttribute("disabled");
+}
 
 function validateForm() {
     const firstName = document.getElementById("first-name").value;
@@ -24,6 +40,7 @@ function validateForm() {
     const email = document.getElementById("email").value;
     const mobile = document.getElementById("mobile").value;
     const companyName = document.getElementById("company-name").value;
+    const message = document.getElementById("message").value;
 
     const firstNameError = document.getElementById("first-name-error");
     const lastNameError = document.getElementById("last-name-error");
@@ -74,5 +91,50 @@ function validateForm() {
         isValid = false;
     }
 
-    return isValid;
+    return isValid; // Return the validation status
+}
+
+function sendEmail() {
+    (function(){
+        emailjs.init("UQmFU3dXCFjA88dGL")
+    })();
+
+    const firstName = document.getElementById("first-name").value;
+    const lastName = document.getElementById("last-name").value;
+    const email = document.getElementById("email").value;
+    const companyName = document.getElementById("company-name").value;
+    const message = document.getElementById("message").value;
+
+    let params = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        mobile : mobile,
+        message: message,
+        companyName: companyName,
+        timestamp : new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' })
+    }
+    let serviceID = "service_l1n6x5d";
+    let templateID = "template_tifkpik";
+
+
+    emailjs.send(serviceID, templateID, params).then(res => {
+        document.querySelector('body').style.overflow = "hidden";
+        overlay.classList.remove("hide")
+        document.getElementById("first-name").value = ""
+        document.getElementById("last-name").value = ""
+        document.getElementById("email").value = ""
+        document.getElementById("mobile").value = ""
+        document.getElementById("company-name").value = ""
+        document.getElementById("message").value = ""
+        recaptchaCheckbox = ""
+    })
+        .catch(error => {
+            alert("Email sending failed: " + error);
+        });
+}
+
+function CancelPopup() {
+    overlay.classList.add("hide")
+    document.querySelector('body').style.overflow = "scroll";
 }

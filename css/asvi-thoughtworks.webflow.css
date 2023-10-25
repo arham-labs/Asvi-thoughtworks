@@ -559,6 +559,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
+  color: #50265C;
 }
 
 .brix---icon-success-message-big-3 {
@@ -567,12 +568,17 @@
 }
 
 .brix---success-message-3 {
-  color: #fff;
-  background-color: #4a3aff;
-  border-radius: 24px;
-  padding: 28px 28px 32px;
+  background-color: #FAFAFA;
+  padding: 70px 52px 70px;
   font-size: 18px;
   line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2.87333px 4.31px 34.48px 0px rgba(0, 0, 0, 0.19);
+  position: relative;
+
 }
 
 .brix---input-3 {
@@ -1969,7 +1975,6 @@
 }
 
 .heading_center.remove-gap {
-  margin-bottom: 2%;
   font-weight: 600;
 }
 
@@ -5447,8 +5452,8 @@
 
   .brix---card-form-3 {
     min-height: auto;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .brix---hero-v7-left-col-3 {
@@ -7120,4 +7125,14 @@
   .nw-logo {
     width: 112px;
   }
+
+  .brix---success-message-3 {
+    padding: 20px 12px 20px;
+    font-size: 14px;
+    width: 350px;
+  }
+  .brix---icon-success-message-big-3{
+    width: 50px;
+  }
+
 }
