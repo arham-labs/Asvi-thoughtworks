@@ -161,8 +161,9 @@
 @media screen and (max-width: 767px) {
 
     .secure-btn {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 0;
+        padding: 12px 16px;
     }
 
     .fold3-main-container {

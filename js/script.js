@@ -1,5 +1,13 @@
 let overlay = document.getElementById("overlay");
 
+let response1;
+var CaptchaCallback = function() {
+    grecaptcha.render('captcha1', {'sitekey' : '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud'});
+    grecaptcha.render('captcha2', {'sitekey' : '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud'});
+    
+};
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
     form.addEventListener("submit", function (e) {
@@ -7,11 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const isValid = validateForm(); // Check for validation errors
         if (isValid) {
             // Ensure the reCAPTCHA is checked before sending the email
-            const recaptchaCheckbox = grecaptcha.getResponse();
-            if (recaptchaCheckbox !== "") {
-                sendEmail(); // Send email if the form is valid and reCAPTCHA is checked
-            } else {
-                alert("Please complete the reCAPTCHA challenge before submitting the form.");
+            response1 = grecaptcha.getResponse(0)
+            console.log(response1,'response');
+            if (isValid) {
+                if (response1 != "") {
+                    sendFooterEmail(); // Send email if the form is valid and reCAPTCHA is checked
+                } else {
+                    alert("Please complete the reCAPTCHA challenge before submitting the form.");
+                }
             }
         }
     });
@@ -95,13 +106,12 @@ function validateForm() {
 }
 
 function sendEmail() {
-    (function(){
-        emailjs.init("UQmFU3dXCFjA88dGL")
-    })();
+   
 
     const firstName = document.getElementById("first-name").value;
     const lastName = document.getElementById("last-name").value;
     const email = document.getElementById("email").value;
+    const mobile = document.getElementById("mobile").value;
     const companyName = document.getElementById("company-name").value;
     const message = document.getElementById("message").value;
 
@@ -114,24 +124,32 @@ function sendEmail() {
         companyName: companyName,
         timestamp : new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' })
     }
-    let serviceID = "service_l1n6x5d";
-    let templateID = "template_tifkpik";
 
-
-    emailjs.send(serviceID, templateID, params).then(res => {
-        document.querySelector('body').style.overflow = "hidden";
-        overlay.classList.remove("hide")
-        document.getElementById("first-name").value = ""
-        document.getElementById("last-name").value = ""
-        document.getElementById("email").value = ""
-        document.getElementById("mobile").value = ""
-        document.getElementById("company-name").value = ""
-        document.getElementById("message").value = ""
-        recaptchaCheckbox = ""
+    fetch('/mail.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(params),
     })
-        .catch(error => {
-            alert("Email sending failed: " + error);
-        });
+        .then(response => {
+            if (!response.ok) {
+                alert("Failed to send mail")
+                throw new Error("Failed to send mail");
+            }
+            else {
+                document.querySelector('body').style.overflow = "hidden";
+                overlay.classList.remove("hide");
+                document.getElementById("first-name").value = "";
+                document.getElementById("last-name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("mobile").value = ""
+                document.getElementById("company-name").value = ""
+                document.getElementById("message").value = ""
+                recaptchaCheckbox = "";
+            }
+        })
+
 }
 
 function CancelPopup() {

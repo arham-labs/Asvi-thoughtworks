@@ -3091,7 +3091,6 @@
 .grid {
   width: 960px;
   grid-template-rows: auto;
-  grid-template-columns: 3.75fr 1fr 1fr 1fr;
 }
 
 .div-block-75 {
@@ -4793,6 +4792,7 @@
 
   .heading-7 {
     font-size: 36px;
+    margin-bottom: 15px;
   }
 
   .cell-2 {
@@ -5172,7 +5172,7 @@
     align-items: center;
     margin-bottom: 15px;
   }
-
+   
   .location {
     position: relative;
     left: 10px;
@@ -5195,9 +5195,10 @@
 
   .brix---btn-primary-small {
     width: auto;
-    padding: 18px 20px;
+    padding: 12px 16px;
     line-height: 1.4;
     display: block;
+    font-size: 14px;
   }
 
   /* .brix---btn-primary-small.hide {
@@ -5386,8 +5387,8 @@
   }
 
   .asvi---button.asvi---button---secondary {
-    padding: 18px 20px;
-    font-size: 16px;
+    padding: 12px 16px;
+    font-size: 14px;
     font-weight: 600;
   }
 
@@ -5863,6 +5864,8 @@
 
   .floating-tag---text {
     position: absolute;
+    padding: 12px 16px;
+    font-size: 14px;
   }
 
   .color-section {
@@ -6490,12 +6493,12 @@
 
   .grid {
     grid-column-gap: 0px;
-    grid-row-gap: 20px;
+    grid-row-gap: 0;
     grid-template: "."
       "Area-2"
       "Area"
       "."
-      / 1fr 1fr;
+      / 1fr 0;
     margin-left: 5%;
     margin-right: 5%;
   }
