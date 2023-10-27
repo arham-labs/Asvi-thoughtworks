@@ -1,6 +1,11 @@
 let overlay = document.getElementById("overlay");
 // Serve static files (HTML)
-
+let response1;
+var CaptchaCallback = function() {
+    grecaptcha.render('captcha1', {'sitekey' : '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud'});
+    grecaptcha.render('captcha2', {'sitekey' : '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud'});
+    
+};
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
@@ -9,13 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const isValid = validateForm(); // Check for validation errors
         if (isValid) {
             // Ensure the reCAPTCHA is checked before sending the email
-            const recaptchaCheckbox = grecaptcha.getResponse();
-            if (recaptchaCheckbox !== "") {
-                console.log("if");
-                sendEmail(); // Send email if the form is valid and reCAPTCHA is checked
-            } else {
-                console.log("else");
-                alert("Please complete the reCAPTCHA challenge before submitting the form.");
+            response1 = grecaptcha.getResponse(0)
+            console.log(response1,'response');
+            if (isValid) {
+                if (response1 != "") {
+                    sendFooterEmail(); // Send email if the form is valid and reCAPTCHA is checked
+                } else {
+                    alert("Please complete the reCAPTCHA challenge before submitting the form.");
+                }
             }
         }
     });
