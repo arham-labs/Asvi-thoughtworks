@@ -7,6 +7,31 @@
     width: 84% !important;
 }
 
+.detail-1-hero-banner-image {
+    height: 100vh;
+    background-image: url('../images/case-detail-1-hero-banner.png');
+    background-position: 50%;
+    background-size: cover;
+}
+.detail-2-hero-banner-image {
+    height: 100vh;
+    background-image: url('../images/case-detail-2-hero-banner.png');
+    background-position: 50%;
+    background-size: cover;
+}
+.detail-3-hero-banner-image {
+    height: 100vh;
+    background-image: url('../images/case-detail-3-hero-banner.png');
+    background-position: 50%;
+    background-size: cover;
+}
+.detail-4-hero-banner-image {
+    height: 100vh;
+    background-image: url('../images/case-detail-4-hero-banner.png');
+    background-position: 50%;
+    background-size: cover;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -127,7 +152,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.fold-2{
+.fold-2 {
     background-color: #FEF4F4;
     color: #50265C;
 }
@@ -143,7 +168,7 @@
 
 .intro-banner-image {
     width: 50%;
-    aspect-ratio: 21/10;
+    aspect-ratio: 21/12;
 }
 
 .bussiness-banner-image {
@@ -158,14 +183,66 @@
     background-size: cover;
 }
 
-.banner-image-sec-2 {
-    background: url('../images/intro-hero.png');
+.banner-image-detail-2-sec-1 {
+    background: url('../images/intro-hero-2.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.banner-image-detail-3-sec-1 {
+    background: url('../images/intro-hero-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-image-detail-4-sec-1 {
+    background: url('../images/intro-hero-4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.banner-image-sec-2 {
+    background: url('../images/challenges-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.banner-image-detail-2-sec-2 {
+    background: url('../images/challenges-banner-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-image-detail-3-sec-2 {
+    background: url('../images/challenges-banner-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-image-detail-4-sec-2 {
+    background: url('../images/challenges-banner-4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .bussiness-banner-sec-1 {
     background: url('../images/business-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bussiness-banner-sec-2 {
+    background: url('../images/business-banner-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bussiness-banner-sec-3 {
+    background: url('../images/business-banner-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bussiness-banner-sec-4 {
+    background: url('../images/business-banner-4.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -216,23 +293,71 @@
     position: relative;
 }
 
-.results-banner-1 {
-    background: url('../images/results-banner-1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+.results-banner-image {
     width: 50%;
     aspect-ratio: 21/9;
     z-index: 0;
+}
+.result-banner-detail-1-list-1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url('../images/results-banner-1.png');
+}
+.result-banner-detail-1-list-2 {
+    background: url('../images/results-banner-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.results-banner-2 {
-    background: url('../images/welcome-banner.png');
+.result-banner-detail-2-list-1 {
+    background: url('../images/result-banner-detail-2-list-1.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
-    aspect-ratio: 21/9;
-    z-index: 0;
 }
+.result-banner-detail-2-list-2 {
+    background: url('../images/result-banner-detail-2-list-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.result-banner-detail-2-list-3 {
+    background: url('../images/result-banner-detail-2-list-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.result-banner-detail-3-list-1 {
+    background: url('../images/result-banner-detail-3-list-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.result-banner-detail-3-list-2 {
+    background: url('../images/result-banner-detail-3-list-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.result-banner-detail-3-list-3 {
+    background: url('../images/result-banner-detail-3-list-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.result-banner-detail-4-list-1 {
+    background: url('../images/result-banner-detail-4-list-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.result-banner-detail-4-list-2 {
+    background: url('../images/result-banner-detail-4-list-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.result-banner-detail-4-list-3 {
+    background: url('../images/result-banner-detail-4-list-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .result-content {
     display: flex;
@@ -322,6 +447,27 @@
         padding: 60px 0;
     }
 
+    .detail-1-hero-banner-image {
+        height: 80vh;
+        background-image: url('../images/case-detail-1-mobile-hero-banner.png');
+        background-position: 0 0;
+    }
+    .detail-2-hero-banner-image {
+        height: 80vh;
+        background-image: url('../images/case-detail-2-mobile-hero-banner.png');
+        background-position: 0 0;
+    }
+    .detail-3-hero-banner-image {
+        height: 80vh;
+        background-image: url('../images/case-detail-3-mobile-hero-banner.png');
+        background-position: 0 0;
+    }
+    .detail-4-hero-banner-image {
+        height: 80vh;
+        background-image: url('../images/case-detail-4-mobile-hero-banner.png');
+        background-position: 0 0;
+    }
+
     .header-container {
         flex-direction: column;
         gap: 40px;
@@ -337,7 +483,8 @@
         flex-direction: row;
         gap: 20px;
     }
-    .header-sec{
+
+    .header-sec {
         width: 50%;
         overflow-wrap: break-word;
     }
@@ -393,7 +540,8 @@
     .bussiness-content {
         width: 100%;
     }
-    .intro-content span{
+
+    .intro-content span {
         font-size: 32px;
         margin-right: 12px;
     }
@@ -406,6 +554,7 @@
     .bussiness-con:not(:first-child) {
         margin-top: 12px;
     }
+
     .intro-content:not(:first-child) {
         margin-top: 12px;
     }
@@ -421,17 +570,46 @@
     }
 
     .banner-image-sec-1 {
-        background: url('../images/home-hero-collatrel.png');
+        background: url('../images/intro-hero.png');
         background-size: cover;
     }
 
     .banner-image-sec-2 {
-        background: url('../images/fold3_with_overlay-p-1080.png');
+        background: url('../images/banner-image-sec-2-mobile.png');
         background-size: cover;
     }
 
     .bussiness-banner-sec-1 {
-        background: url('../images/welcome-banner.png');
+        background: url('../images/business-banner.png');
+        background-size: cover;
+    }
+    .bussiness-banner-sec-2 {
+        background: url('../images/business-banner-2.png');
+        background-size: cover;
+    }
+    .bussiness-banner-sec-3 {
+        background: url('../images/business-banner-3.png');
+        background-size: cover;
+    }
+    .bussiness-banner-sec-4 {
+        background: url('../images/business-mobile-banner-4.png');
+        background-size: cover;
+    }
+
+    .banner-image-detail-3-sec-2 {
+        background: url('../images/challenges-mobile-banner-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-image-detail-3-sec-2 {
+        background: url('../images/challenges-mobile-banner-3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner-image-detail-4-sec-2 {
+        background: url('../images/challenges-mobile-banner-4.png');
+        background-repeat: no-repeat;
         background-size: cover;
     }
 
@@ -453,6 +631,54 @@
     .results-banner-2 {
         aspect-ratio: 8/5;
         width: 100%;
+    }
+
+    .result-banner-detail-1-list-1 {
+        background: url('../images/results-banner-mobile-1.png');
+        background-size: cover;
+    }
+    .result-banner-detail-1-list-2 {
+        background: url('../images/results-banner-mobile-2.png');
+        background-size: cover;
+    }
+    
+    .result-banner-detail-2-list-1 {
+        background: url('../images/result-banner-mobile-detail-2-list-1.png');
+        background-size: cover;
+    }
+    .result-banner-detail-2-list-2 {
+        background: url('../images/result-banner-mobile-detail-2-list-2.png');
+        background-size: cover;
+    }
+    .result-banner-detail-2-list-3 {
+        background: url('../images/result-banner-mobile-detail-2-list-3.png');
+        background-size: cover;
+    }
+
+    .result-banner-detail-3-list-1 {
+        background: url('../images/result-banner-mobile-detail-3-list-1.png');
+        background-size: cover;
+    }
+    .result-banner-detail-3-list-2 {
+        background: url('../images/result-banner-mobile-detail-3-list-2.png');
+        background-size: cover;
+    }
+    .result-banner-detail-3-list-3 {
+        background: url('../images/result-banner-mobile-detail-3-list-3.png');
+        background-size: cover;
+    }
+
+    .result-banner-detail-4-list-1 {
+        background: url('../images/result-banner-mobile-detail-4-list-1.png');
+        background-size: cover;
+    }
+    .result-banner-detail-4-list-2 {
+        background: url('../images/result-banner-mobile-detail-4-list-2.png');
+        background-size: cover;
+    }
+    .result-banner-detail-4-list-3 {
+        background: url('../images/result-banner-mobile-detail-4-list-3.png');
+        background-size: cover;
     }
 
     .result-container {

@@ -2818,7 +2818,6 @@
 
 .fr---fold-2---left-image {
   width: 50%;
-  height: 680px;
   cursor: pointer;
   background-image: url('../images/fr_card-1.png');
   background-position: 0 0;
@@ -2826,12 +2825,10 @@
 }
 
 .fr---fold-2---left-image.card-2 {
-  height: 570px;
   background-image: url('../images/fr_card-2_hdhdh.png');
 }
 
 .fr---fold-2---left-image.card-3 {
-  height: 610px;
   background-image: url('../images/fr_card-3.png');
 }
 

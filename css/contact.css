@@ -7,6 +7,12 @@
     margin: 0 auto;
     margin-top: 60px;
 }
+.contact-hero-banner-image {
+    height: 100vh;
+    background-image: url('../images/contact-hero-banner.png');
+    background-position: 50%;
+    background-size: cover;
+}
 
 .contact-header {
     display: flex;
@@ -72,6 +78,11 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+    .contact-hero-banner-image {
+        height: 80vh;
+        background-image: url('../images/contact-mobile-hero-banner.png');
+        background-position: 0 0;
+    }
     .main-container {
         padding: 60px 0;
     }
