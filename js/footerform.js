@@ -1,8 +1,8 @@
 let reponse;
-var CaptchaCallback = function() {
-    grecaptcha.render('captcha1', {'sitekey' : '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud'});
-    grecaptcha.render('captcha2', {'sitekey' : '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud'});
-    
+var CaptchaCallback = function () {
+    grecaptcha.render('captcha1', { 'sitekey': '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud' });
+    grecaptcha.render('captcha2', { 'sitekey': '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud' });
+
 };
 
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         const isValid = validateFooterForm(); // Check for validation errors
         response = grecaptcha.getResponse(1)
-        console.log(response,'response');
+        console.log(response, 'response');
         if (isValid) {
             if (response != "") {
                 sendFooterEmail(); // Send email if the form is valid and reCAPTCHA is checked
@@ -69,11 +69,12 @@ function sendFooterEmail() {
     const email = document.getElementById("footer-email").value;
 
     let params = {
-        email: email,
+        mail_type: "email_footer",
+        email_id: email,
         timestamp: new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' })
     }
 
-    fetch('/mail.php', {
+    fetch('http://asvithoughtworks.com/mail/index.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

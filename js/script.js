@@ -1,10 +1,12 @@
 let overlay = document.getElementById("overlay");
+var contactForm = document.getElementById('contact-form');
+var formType = contactForm.getAttribute('type');
 
 let response1;
-var CaptchaCallback = function() {
-    grecaptcha.render('captcha1', {'sitekey' : '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud'});
-    grecaptcha.render('captcha2', {'sitekey' : '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud'});
-    
+var CaptchaCallback = function () {
+    grecaptcha.render('captcha1', { 'sitekey': '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud' });
+    grecaptcha.render('captcha2', { 'sitekey': '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud' });
+
 };
 
 
@@ -16,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (isValid) {
             // Ensure the reCAPTCHA is checked before sending the email
             response1 = grecaptcha.getResponse(0)
-            console.log(response1,'response');
+            console.log(response1, 'response');
             if (isValid) {
                 if (response1 != "") {
-                    sendFooterEmail(); // Send email if the form is valid and reCAPTCHA is checked
+                    sendEmail(); // Send email if the form is valid and reCAPTCHA is checked
                 } else {
                     alert("Please complete the reCAPTCHA challenge before submitting the form.");
                 }
@@ -106,7 +108,7 @@ function validateForm() {
 }
 
 function sendEmail() {
-   
+
 
     const firstName = document.getElementById("first-name").value;
     const lastName = document.getElementById("last-name").value;
@@ -116,16 +118,17 @@ function sendEmail() {
     const message = document.getElementById("message").value;
 
     let params = {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        mobile : mobile,
-        message: message,
-        companyName: companyName,
-        timestamp : new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' })
+        mail_type: formType === "home_page" ? "home_page" : formType === "contact_us" ? "contact_us" : "",
+        first_name: firstName,
+        last_name: lastName,
+        email_id: email,
+        mobile_number: mobile,
+        additional_message: message,
+        company_name: companyName,
+        timestamp: new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' })
     }
 
-    fetch('/mail.php', {
+    fetch('http://asvithoughtworks.com/mail/index.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

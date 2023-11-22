@@ -58,7 +58,7 @@
 }
 
 .detail-fold-1 {
-    background-color: #FEF4F4;
+    background-color: #fff;
     color: #50265C;
 }
 
@@ -125,6 +125,11 @@
     color: #72517E;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+}
+
+.fold-2{
+    background-color: #FEF4F4;
+    color: #50265C;
 }
 
 .bussiness-con:not(:first-child) {

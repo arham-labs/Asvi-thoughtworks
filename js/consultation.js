@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(response1,'response');
             if (isValid) {
                 if (response1 != "") {
-                    sendFooterEmail(); // Send email if the form is valid and reCAPTCHA is checked
+                    sendEmail(); // Send email if the form is valid and reCAPTCHA is checked
                 } else {
                     alert("Please complete the reCAPTCHA challenge before submitting the form.");
                 }
@@ -76,18 +76,18 @@ function validateForm() {
 }
 
 function sendEmail() {
-    console.log("click");
     const Name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
 
     const mailOptions = {
+        mail_type : "about_us",
         name : Name,
-        email: email, 
+        email_id: email, 
         timestamp : new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' })
     };
 
 
-    fetch('/mail.php', {
+    fetch('http://asvithoughtworks.com/mail/index.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
