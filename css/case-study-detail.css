@@ -13,18 +13,21 @@
     background-position: 50%;
     background-size: cover;
 }
+
 .detail-2-hero-banner-image {
     height: 100vh;
     background-image: url('../images/case-detail-2-hero-banner.png');
     background-position: 50%;
     background-size: cover;
 }
+
 .detail-3-hero-banner-image {
     height: 100vh;
     background-image: url('../images/case-detail-3-hero-banner.png');
     background-position: 50%;
     background-size: cover;
 }
+
 .detail-4-hero-banner-image {
     height: 100vh;
     background-image: url('../images/case-detail-4-hero-banner.png');
@@ -57,16 +60,19 @@
 .header-sec span {
     font-size: 20px;
     color: #F4A7A3;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'IBM Plex Sans';
     margin-bottom: 15px;
     display: block;
+    text-transform: uppercase;
+
 }
 
 .header-sec p {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    line-height: 1.5em;
 }
 
 
@@ -92,7 +98,7 @@
     margin-bottom: 24px;
     margin-top: 0;
     font-family: 'IBM Plex Sans';
-
+    font-weight: 600;
 }
 
 .bussiness-content h1 {
@@ -101,6 +107,7 @@
     margin-top: 0;
     color: #50265C;
     font-family: 'IBM Plex Sans';
+    font-weight: 600;
 }
 
 .intro-con {
@@ -214,11 +221,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .banner-image-detail-3-sec-2 {
     background: url('../images/challenges-banner-3.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .banner-image-detail-4-sec-2 {
     background: url('../images/challenges-banner-4.png');
     background-repeat: no-repeat;
@@ -231,16 +240,19 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bussiness-banner-sec-2 {
     background: url('../images/business-banner-2.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bussiness-banner-sec-3 {
     background: url('../images/business-banner-3.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bussiness-banner-sec-4 {
     background: url('../images/business-banner-4.png');
     background-repeat: no-repeat;
@@ -298,11 +310,13 @@
     aspect-ratio: 21/9;
     z-index: 0;
 }
+
 .result-banner-detail-1-list-1 {
     background-size: cover;
     background-repeat: no-repeat;
     background: url('../images/results-banner-1.png');
 }
+
 .result-banner-detail-1-list-2 {
     background: url('../images/results-banner-2.png');
     background-size: cover;
@@ -314,11 +328,13 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .result-banner-detail-2-list-2 {
     background: url('../images/result-banner-detail-2-list-2.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .result-banner-detail-2-list-3 {
     background: url('../images/result-banner-detail-2-list-3.png');
     background-size: cover;
@@ -331,11 +347,13 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .result-banner-detail-3-list-2 {
     background: url('../images/result-banner-detail-3-list-2.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .result-banner-detail-3-list-3 {
     background: url('../images/result-banner-detail-3-list-3.png');
     background-size: cover;
@@ -347,11 +365,13 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .result-banner-detail-4-list-2 {
     background: url('../images/result-banner-detail-4-list-2.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .result-banner-detail-4-list-3 {
     background: url('../images/result-banner-detail-4-list-3.png');
     background-size: cover;
@@ -442,9 +462,19 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.result-header {
+    font-weight: 600;
+    margin-top: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
 @media screen and (max-width: 1024px) {
     .main-container {
         padding: 60px 0;
+    }
+
+    .header-wrapper {
+        width: 90% !important;
     }
 
     .detail-1-hero-banner-image {
@@ -452,16 +482,19 @@
         background-image: url('../images/case-detail-1-mobile-hero-banner.png');
         background-position: 0 0;
     }
+
     .detail-2-hero-banner-image {
         height: 80vh;
         background-image: url('../images/case-detail-2-mobile-hero-banner.png');
         background-position: 0 0;
     }
+
     .detail-3-hero-banner-image {
         height: 80vh;
         background-image: url('../images/case-detail-3-mobile-hero-banner.png');
         background-position: 0 0;
     }
+
     .detail-4-hero-banner-image {
         height: 80vh;
         background-image: url('../images/case-detail-4-mobile-hero-banner.png');
@@ -482,6 +515,7 @@
     .header-content {
         flex-direction: row;
         gap: 20px;
+        width: 100%;
     }
 
     .header-sec {
@@ -494,7 +528,6 @@
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.8px;
-        text-transform: uppercase;
     }
 
     .header-sec p {
@@ -583,14 +616,17 @@
         background: url('../images/business-banner.png');
         background-size: cover;
     }
+
     .bussiness-banner-sec-2 {
         background: url('../images/business-banner-2.png');
         background-size: cover;
     }
+
     .bussiness-banner-sec-3 {
         background: url('../images/business-banner-3.png');
         background-size: cover;
     }
+
     .bussiness-banner-sec-4 {
         background: url('../images/business-mobile-banner-4.png');
         background-size: cover;
@@ -607,6 +643,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .banner-image-detail-4-sec-2 {
         background: url('../images/challenges-mobile-banner-4.png');
         background-repeat: no-repeat;
@@ -637,19 +674,22 @@
         background: url('../images/results-banner-mobile-1.png');
         background-size: cover;
     }
+
     .result-banner-detail-1-list-2 {
         background: url('../images/results-banner-mobile-2.png');
         background-size: cover;
     }
-    
+
     .result-banner-detail-2-list-1 {
         background: url('../images/result-banner-mobile-detail-2-list-1.png');
         background-size: cover;
     }
+
     .result-banner-detail-2-list-2 {
         background: url('../images/result-banner-mobile-detail-2-list-2.png');
         background-size: cover;
     }
+
     .result-banner-detail-2-list-3 {
         background: url('../images/result-banner-mobile-detail-2-list-3.png');
         background-size: cover;
@@ -659,10 +699,12 @@
         background: url('../images/result-banner-mobile-detail-3-list-1.png');
         background-size: cover;
     }
+
     .result-banner-detail-3-list-2 {
         background: url('../images/result-banner-mobile-detail-3-list-2.png');
         background-size: cover;
     }
+
     .result-banner-detail-3-list-3 {
         background: url('../images/result-banner-mobile-detail-3-list-3.png');
         background-size: cover;
@@ -672,10 +714,12 @@
         background: url('../images/result-banner-mobile-detail-4-list-1.png');
         background-size: cover;
     }
+
     .result-banner-detail-4-list-2 {
         background: url('../images/result-banner-mobile-detail-4-list-2.png');
         background-size: cover;
     }
+
     .result-banner-detail-4-list-3 {
         background: url('../images/result-banner-mobile-detail-4-list-3.png');
         background-size: cover;
@@ -717,6 +761,7 @@
     .div-block-64 h1 {
         font-size: 28px;
         margin: 0;
+        font-weight: 600;
     }
 
     .testimonial-card {
@@ -745,6 +790,10 @@
 
     .desc {
         font-size: 16px;
+    }
+
+    .result-header {
+        font-size: 28px;
     }
 }
 

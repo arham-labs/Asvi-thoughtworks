@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .w-layout-grid {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
@@ -39,10 +43,11 @@
   padding: 14px 20px;
   font-family: IBM Plex Sans, sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 18px;
   text-decoration: none;
   transition: background-color .3s, transform .3s, color .3s;
+  letter-spacing: 0.9px;
 }
 
 .brix---btn-primary-small:hover {
@@ -264,7 +269,7 @@
   font-family: IBM Plex Sans, sans-serif;
   font-weight: 500;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0%;
   bottom: auto;
   left: 0%;
@@ -345,7 +350,7 @@
   text-align: left;
   margin-top: 0;
   margin-bottom: 8%;
-  font-size: 28px;
+  font-size: 38px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -640,7 +645,7 @@
 
 .brix---card-form-3 {
   min-height: auto;
-  background: #FAFAFA;
+  background: #fff;
   border: 1px solid #eff0f6;
   border-radius: 0;
   margin-bottom: 0;
@@ -777,7 +782,6 @@
 
 .image-3 {
   max-width: none;
-  margin-bottom: 25px;
   padding: 0;
 }
 
@@ -1972,6 +1976,7 @@
   text-align: center;
   margin: 0 0% 5.5%;
   font-size: 38px;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .heading_center.remove-gap {
@@ -1994,6 +1999,7 @@
   font-weight: 700;
   line-height: 1.2;
   color: #50265C;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .fractional-hr---banner {
@@ -2134,8 +2140,9 @@
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   display: flex;
+  margin-top: 30px;
 }
 
 .case-study-listing-title {
@@ -2837,17 +2844,9 @@
   background-position: 0 0;
 }
 
-.fr---fold-2---left-image.image-1.hhshsh {
-  height: 475px;
-}
-
 .fr---fold-2---left-image.image-2 {
   background-image: url('../images/coe_card-2.png');
   background-position: 60%;
-}
-
-.fr---fold-2---left-image.image-2.shshsh {
-  height: 440px;
 }
 
 .fr---fold-2---left-image.image-3 {
@@ -2855,9 +2854,6 @@
   background-position: 50%;
 }
 
-.fr---fold-2---left-image.image-3.dcsdcsd {
-  height: 460px;
-}
 
 .div-block-71 {
   width: 100%;
@@ -3126,7 +3122,7 @@
 }
 
 .information-container {
-  margin-top: 0;
+  margin-top: 20px;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -5169,7 +5165,7 @@
     align-items: center;
     margin-bottom: 15px;
   }
-   
+
   .location {
     position: relative;
     left: 10px;
@@ -5301,7 +5297,7 @@
   .asvi---heading-2 {
     text-align: center;
     margin-bottom: 4%;
-    font-size: 22px;
+    font-size: 28px;
   }
 
   .asvi---heading-2.centered {
@@ -5532,7 +5528,6 @@
 
   .image-3 {
     max-width: none;
-    margin-bottom: 25px;
   }
 
   .asvi---footer-icon {
@@ -5551,7 +5546,7 @@
   }
 
   .div-block-8 {
-    width: 85%;
+    width: 90%;
   }
 
   .heading-7 {
@@ -5884,7 +5879,7 @@
   }
 
   .sub-text.center {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 14px;
@@ -6002,7 +5997,7 @@
   .filter {
     width: auto;
     flex-direction: column;
-    margin-bottom: 54px;
+    margin-bottom: 30px;
   }
 
   .case-study-listing-title {
@@ -7130,8 +7125,24 @@
     font-size: 14px;
     width: 350px;
   }
-  .brix---icon-success-message-big-3{
+
+  .brix---icon-success-message-big-3 {
     width: 50px;
   }
 
+}
+
+.hover-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #e85046;
+  border: 0;
+  color: #FFF;
+}
+
+.hover-btn:hover {
+  color: #fff;
+  -webkit-text-fill-color: inherit;
+  background-color: rgba(232, 80, 70, .54);
+  background-clip: border-box;
 }
