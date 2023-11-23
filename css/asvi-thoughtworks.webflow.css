@@ -3122,7 +3122,7 @@ a {
 }
 
 .information-container {
-  margin-top: 0;
+  margin-top: 20px;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
