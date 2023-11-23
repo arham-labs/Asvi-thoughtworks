@@ -94,7 +94,7 @@
     margin-bottom: 24px;
     margin-top: 0;
     font-family: 'IBM Plex Sans';
-
+    font-weight: 600;
 }
 
 .bussiness-content h1 {
@@ -103,6 +103,7 @@
     margin-top: 0;
     color: #50265C;
     font-family: 'IBM Plex Sans';
+    font-weight: 600;
 }
 
 .intro-con {
@@ -443,6 +444,9 @@
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
 }
+.result-header{
+    font-weight: 600;
+}
 
 @media screen and (max-width: 1024px) {
     .main-container {
@@ -484,6 +488,7 @@
     .header-content {
         flex-direction: row;
         gap: 20px;
+        width: 100%;
     }
 
     .header-sec {
@@ -718,6 +723,7 @@
     .div-block-64 h1 {
         font-size: 28px;
         margin: 0;
+        font-weight: 600;
     }
 
     .testimonial-card {

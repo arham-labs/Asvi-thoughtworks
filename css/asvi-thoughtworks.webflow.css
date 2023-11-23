@@ -42,7 +42,7 @@ a{
   padding: 14px 20px;
   font-family: IBM Plex Sans, sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 18px;
   text-decoration: none;
   transition: background-color .3s, transform .3s, color .3s;
@@ -643,7 +643,7 @@ a{
 
 .brix---card-form-3 {
   min-height: auto;
-  background: #FAFAFA;
+  background: #fff;
   border: 1px solid #eff0f6;
   border-radius: 0;
   margin-bottom: 0;
