@@ -5169,7 +5169,7 @@
     align-items: center;
     margin-bottom: 15px;
   }
-   
+
   .location {
     position: relative;
     left: 10px;
@@ -7130,8 +7130,23 @@
     font-size: 14px;
     width: 350px;
   }
-  .brix---icon-success-message-big-3{
+
+  .brix---icon-success-message-big-3 {
     width: 50px;
   }
 
+}
+
+.hover-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #e85046; 
+  border: 0; 
+  color: #FFF;
+}
+.hover-btn:hover{
+  color: #fff;
+  -webkit-text-fill-color: inherit;
+  background-color: rgba(232, 80, 70, .54);
+  background-clip: border-box;
 }

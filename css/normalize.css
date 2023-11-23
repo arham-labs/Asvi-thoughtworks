@@ -552,6 +552,12 @@ form input{
   align-items: center;
   gap: 5px;
 }
+.form-btn:hover{
+  color: #fff;
+  -webkit-text-fill-color: inherit;
+  background-color: rgba(232, 80, 70, .54);
+  background-clip: border-box;
+}
 
 @media screen and (max-width: 1024px){
   .form-container{

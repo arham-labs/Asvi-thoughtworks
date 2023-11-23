@@ -57,10 +57,12 @@
 .header-sec span {
     font-size: 20px;
     color: #F4A7A3;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'IBM Plex Sans';
     margin-bottom: 15px;
     display: block;
+    text-transform: uppercase;
+
 }
 
 .header-sec p {
@@ -494,7 +496,6 @@
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.8px;
-        text-transform: uppercase;
     }
 
     .header-sec p {
@@ -745,6 +746,9 @@
 
     .desc {
         font-size: 16px;
+    }
+    .result-header{
+        font-size: 28px;
     }
 }
 
