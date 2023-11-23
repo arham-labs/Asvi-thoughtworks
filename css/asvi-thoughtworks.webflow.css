@@ -1,3 +1,6 @@
+a{
+  text-decoration: none;
+}
 .w-layout-grid {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
@@ -2134,8 +2137,9 @@
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   display: flex;
+  margin-top: 30px;
 }
 
 .case-study-listing-title {
@@ -6002,7 +6006,7 @@
   .filter {
     width: auto;
     flex-direction: column;
-    margin-bottom: 54px;
+    margin-bottom: 30px;
   }
 
   .case-study-listing-title {
