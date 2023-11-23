@@ -269,7 +269,7 @@ a {
   font-family: IBM Plex Sans, sans-serif;
   font-weight: 500;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0%;
   bottom: auto;
   left: 0%;
