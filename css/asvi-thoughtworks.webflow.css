@@ -1,6 +1,7 @@
-a{
+a {
   text-decoration: none;
 }
+
 .w-layout-grid {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
@@ -46,6 +47,7 @@ a{
   line-height: 18px;
   text-decoration: none;
   transition: background-color .3s, transform .3s, color .3s;
+  letter-spacing: 0.9px;
 }
 
 .brix---btn-primary-small:hover {
@@ -1975,6 +1977,7 @@ a{
   text-align: center;
   margin: 0 0% 5.5%;
   font-size: 38px;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .heading_center.remove-gap {
@@ -1997,6 +2000,7 @@ a{
   font-weight: 700;
   line-height: 1.2;
   color: #50265C;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .fractional-hr---banner {
@@ -5555,7 +5559,7 @@ a{
   }
 
   .div-block-8 {
-    width: 85%;
+    width: 90%;
   }
 
   .heading-7 {
@@ -7144,11 +7148,12 @@ a{
 .hover-btn {
   padding: 12px 24px;
   font-size: 16px;
-  background-color: #e85046; 
-  border: 0; 
+  background-color: #e85046;
+  border: 0;
   color: #FFF;
 }
-.hover-btn:hover{
+
+.hover-btn:hover {
   color: #fff;
   -webkit-text-fill-color: inherit;
   background-color: rgba(232, 80, 70, .54);
