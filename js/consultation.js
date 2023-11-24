@@ -1,4 +1,5 @@
 let overlay = document.getElementById("overlay");
+let erroroverlay = document.getElementById("error-overlay");
 // Serve static files (HTML)
 let response1;
 var CaptchaCallback = function() {
@@ -95,6 +96,8 @@ function sendEmail() {
         body: JSON.stringify(mailOptions),
     })
         .then(response => {
+            document.getElementById('main-loader').classList.add("hide");
+            document.getElementById('main-text').classList.remove("hide");
             if (!response.ok) {
                 alert("Failed to send mail")
                 throw new Error("Failed to send mail");
@@ -106,11 +109,22 @@ function sendEmail() {
                 document.getElementById("email").value = "";
                 recaptchaCheckbox = "";
             }
+        }).catch(err => {
+            document.getElementById('main-loader').classList.add("hide");
+            document.getElementById('main-text').classList.remove("hide");
+            erroroverlay.classList.remove("hide");
         })
 }
 
 function CancelPopup() {
     overlay.classList.add("hide")
+    document.querySelector('body').style.overflow = "scroll";
+}
+
+function cancelMainErrorPopup() {
+    console.log("click");
+    overlay.classList.add("hide")
+    erroroverlay.classList.add("hide")
     document.querySelector('body').style.overflow = "scroll";
 }
 

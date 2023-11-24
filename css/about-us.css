@@ -94,7 +94,7 @@
     font-size: 18px;
     text-align: center;
     line-height: 1.5em;
-    color: #50265C;
+    color: #72517E;
     margin-bottom: 0;
 }
 
@@ -142,11 +142,20 @@
     font-size: 16px !important;
     margin-bottom: 0;
 }
-.desktop-hide{
+
+.desktop-hide {
     display: none;
 }
-.sm-hide{
+
+.sm-hide {
     display: block;
+}
+
+.connect-title {
+    font-size: 16px;
+    display: block;
+    color: #72517E;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,11 +180,12 @@
     .welcome-sec {
         width: 100%;
     }
-    
-    .welcome-sec span{
+
+    .welcome-sec span {
         font-size: 22px;
     }
-    .welcome-sec p{
+
+    .welcome-sec p {
         font-size: 16px;
     }
 
@@ -233,21 +243,29 @@
     .savings-sec p {
         text-align: center;
     }
+
     .label {
         font-size: 14px;
         padding: 12px 16px;
-     }
-     
+    }
+    .connect-title{
+        text-align: center;
+
+    }
+
 
 }
-@media screen and (max-width: 479px){
-    .sm-pos{
+
+@media screen and (max-width: 479px) {
+    .sm-pos {
         transform: translate(25%, 0%);
     }
-    .desktop-hide{
+
+    .desktop-hide {
         display: block;
     }
-    .sm-hide{
+
+    .sm-hide {
         display: none;
     }
 }
