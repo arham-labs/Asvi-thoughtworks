@@ -109,8 +109,6 @@ function validateForm() {
 }
 
 function sendEmail() {
-
-
     const firstName = document.getElementById("first-name").value;
     const lastName = document.getElementById("last-name").value;
     const email = document.getElementById("email").value;
@@ -118,49 +116,38 @@ function sendEmail() {
     const companyName = document.getElementById("company-name").value;
     const message = document.getElementById("message").value;
 
-    let params = {
-        mail_type: formType === "home_page" ? "home_page" : formType === "contact_us" ? "contact_us" : "",
-        first_name: firstName,
-        last_name: lastName,
-        email_id: email,
-        mobile_number: mobile,
-        additional_message: message,
-        company_name: companyName,
-        timestamp: new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' })
-    }
+    let formData = new FormData();
+    formData.append("mail_type", formType === "home_page" ? "home_page" : formType === "contact_us" ? "contact_us" : "");
+    formData.append("first_name", firstName);
+    formData.append("last_name", lastName);
+    formData.append("email_id", email);
+    formData.append("mobile_number", mobile);
+    formData.append("additional_message", message);
+    formData.append("company_name", companyName);
+    formData.append("timestamp", new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' }));
 
-    fetch('http://asvithoughtworks.com/mail/index.php', {
+    fetch('../mail/index.php', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(params),
+        body: formData,
     })
         .then(response => {
-            document.getElementById('main-loader').classList.add("hide");
-            document.getElementById('main-text').classList.remove("hide");
             if (!response.ok) {
-                erroroverlay.classList.remove("hide");
+                alert("Failed to send mail");
                 throw new Error("Failed to send mail");
-            }
-            else {
+            } else {
                 document.querySelector('body').style.overflow = "hidden";
                 overlay.classList.remove("hide");
                 document.getElementById("first-name").value = "";
                 document.getElementById("last-name").value = "";
                 document.getElementById("email").value = "";
-                document.getElementById("mobile").value = ""
-                document.getElementById("company-name").value = ""
-                document.getElementById("message").value = ""
+                document.getElementById("mobile").value = "";
+                document.getElementById("company-name").value = "";
+                document.getElementById("message").value = "";
                 recaptchaCheckbox = "";
             }
-        }).catch(err => {
-            document.getElementById('main-loader').classList.add("hide");
-            document.getElementById('main-text').classList.remove("hide");
-            erroroverlay.classList.remove("hide");
         })
-
 }
+
 
 function CancelPopup() {
     overlay.classList.add("hide")

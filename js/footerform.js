@@ -66,46 +66,31 @@ function validateFooterForm() {
 }
 
 function sendFooterEmail() {
-
     const email = document.getElementById("footer-email").value;
-    document.getElementById('loader').classList.remove("hide");
-    document.getElementById('show-text').classList.add("hide");
 
-    let params = {
-        mail_type: "email_footer",
-        email_id: email,
-        timestamp: new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' })
-    }
+    let formData = new FormData();
+    formData.append("mail_type", "email_footer");
+    formData.append("email_id", email);
+    formData.append("timestamp", new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' }));
 
-    fetch('http://asvithoughtworks.com/mail/index.php', {
+    fetch('../mail/index.php', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(params),
+        body: formData,
     })
-        .then(response => {
-            console.log(response, 'res');
-            document.getElementById('loader').classList.add("hide");
-            document.getElementById('show-text').classList.remove("hide");
-            if (!response.ok) {
-                footerErroroverlay.classList.remove("hide");
-                throw new Error("Failed to send mail");
-
-            }
-            else {
-                document.querySelector('body').style.overflow = "hidden";
-                overlay.classList.remove("hide")
-                document.getElementById("footer-email").value = ""
-                recaptchaFooterCheckbox = ""
-            }
-        }).catch(err => {
-            document.getElementById('loader').classList.add("hide");
-            document.getElementById('show-text').classList.remove("hide");
-            console.log(err, 'err');
-            footerErroroverlay.classList.remove("hide");
-        })
-
+    .then(response => {
+        if (!response.ok) {
+            alert("Failed to send mail");
+            throw new Error("Failed to send mail");
+        } else {
+            document.querySelector('body').style.overflow = "hidden";
+            overlay.classList.remove("hide");
+            document.getElementById("footer-email").value = "";
+            recaptchaFooterCheckbox = "";
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 }
 
 function CancelPopup() {

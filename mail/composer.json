@@ -1,0 +1,16 @@
+{
+    "name": "rohan/asvi-php-mailer",
+    "description": "Used to send a mail for asvi",
+    "type": "project",
+    "license": "unlicensed",
+    "authors": [
+        {
+            "name": "rohanArhamLabs",
+            "email": "rohanlawande@arhamlabs.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

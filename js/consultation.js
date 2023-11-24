@@ -80,39 +80,27 @@ function sendEmail() {
     const Name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
 
-    const mailOptions = {
-        mail_type : "about_us",
-        name : Name,
-        email_id: email, 
-        timestamp : new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' })
-    };
+    const formData = new FormData();
+    formData.append("mail_type", "about_us");
+    formData.append("name", Name);
+    formData.append("email_id", email);
+    formData.append("timestamp", new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata' }));
 
-
-    fetch('http://asvithoughtworks.com/mail/index.php', {
+    fetch('../mail/index.php', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(mailOptions),
+        body: formData,
     })
         .then(response => {
-            document.getElementById('main-loader').classList.add("hide");
-            document.getElementById('main-text').classList.remove("hide");
             if (!response.ok) {
-                alert("Failed to send mail")
+                alert("Failed to send mail");
                 throw new Error("Failed to send mail");
-            }
-            else {
+            } else {
                 document.querySelector('body').style.overflow = "hidden";
                 overlay.classList.remove("hide");
                 document.getElementById("name").value = "";
                 document.getElementById("email").value = "";
                 recaptchaCheckbox = "";
             }
-        }).catch(err => {
-            document.getElementById('main-loader').classList.add("hide");
-            document.getElementById('main-text').classList.remove("hide");
-            erroroverlay.classList.remove("hide");
         })
 }
 
