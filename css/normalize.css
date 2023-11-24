@@ -535,7 +535,7 @@ form input::placeholder {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .footer-main-container {
@@ -571,6 +571,7 @@ form input::placeholder {
   display: flex;
   align-items: center;
   gap: 5px;
+  width: 107px;
 }
 
 .form-btn:hover {

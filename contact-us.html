@@ -90,7 +90,7 @@
                                         class="brix---header-nav-link-white w-nav-link">Case studies</a>
                                 </li>
                                 <li class="brix---header-nav-list-item-show-in-mbl">
-                                    <a href="contact-us.html" class="secure-btn hide w-button"
+                                    <a href="contact-us.html" class="secure-btn w-button"
                                         style="margin-top: 0;">Contact Us
                                         <img src="images/forward-icon.svg" />
                                     </a>
@@ -185,24 +185,41 @@
                                     placeholder="Type a Message"></input>
                             </div>
                             <div id="captcha1" style="margin-bottom: 15px;" data-callback="recaptchaCallback"></div>
-                            <button type="submit" id="submit-button" class="hover-btn" disabled>Submit</button>
+                            <button type="submit" id="submit-button" class="hover-btn" disabled>
+                                <div id="main-loader" class="hide">
+                                    <img style="width: 21px;" src="images/loader.gif" />
+                                </div>
+                                <span id="main-text">Submit</span>
+                            </button>
                         </form>
                     </div>
                 </div>
                 <div id="overlay" class="overlay hide">
                     <div class="brix---success-message-3 w-form-done"><img src="images/check-mark.svg"
-                            alt="Check - Elements Webflow Library - BRIX Templates"
-                            class="brix---icon-success-message-big-3">
-                        <a class="cancel-popup" onclick="CancelPopup()">
-                            <img src="images/cancel.svg" alt="cancel" />
-                        </a>
-                        <div>
-                            <h3 class="brix---heading-h3-size-3">Thank you</h3>
-                        </div>
-                        <div style="color: #72517e; line-height: 20px;">Thanks for reaching out. We will get back to you
-                            soon.</div>
+                        alt="Check - Elements Webflow Library - BRIX Templates" class="brix---icon-success-message-big-3">
+                      <a class="cancel-popup" onclick="CancelPopup()">
+                        <img src="images/cancel.svg" alt="cancel" />
+                      </a>
+                      <div>
+                        <h3 class="brix---heading-h3-size-3">Thank you</h3>
+                      </div>
+                      <div style="color: #72517e; line-height: 20px;">Thanks for reaching out. We will get back to you soon.</div>
                     </div>
-                </div>
+                  </div>
+                <div id="error-overlay" class="overlay hide">
+                    <div class="brix---success-message-3 w-form-done">
+          
+                      <a class="cancel-popup" onclick="cancelMainErrorPopup()">
+                        <img src="images/cancel.svg" alt="cancel" />
+                      </a>
+                      <div>
+                        <h3 class="brix---heading-h3-size-3">Error!</h3>
+                      </div>
+                      <div style="color: #72517e; line-height: 20px; margin-bottom: 40px;">Your request to submit the form was unsuccessful.  Please
+                        try again.</div>
+                      <button onclick="cancelMainErrorPopup()" class="hover-btn" style="width: auto;">Try Again</button>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>
@@ -280,12 +297,31 @@
                             </div>
                             <button type="submit" id="submit-footer-button" style="position: relative; top: -1.8px;"
                                 class="form-btn">
-                                <p style="margin-bottom: 0;">Submit</p>
-                                <img style="width: 17px;" alt="" src="images/forward-icon.svg" />
+                                <div id="loader" class="hide" style="margin: 0 auto;">
+                                    <img style="width: 21px;" src="images/loader.gif" />
+                                  </div>
+                                  <div id="show-text" style="display: flex; align-items: center; gap: 5px;">
+                                    <p style="margin-bottom: 0;">Submit</p>
+                                    <img style="width: 17px;" alt="" src="images/forward-icon.svg" />
+                                  </div>
                             </button>
                         </form>
                         <div id="captcha2" style="margin-top: 15px;" data-callback="recaptchaFooterCallback"></div>
                     </div>
+                    <div id="footer-error-overlay" class="overlay hide">
+                        <div class="brix---success-message-3 w-form-done">
+            
+                          <a class="cancel-popup" onclick="cancelErrorPopup()">
+                            <img src="images/cancel.svg" alt="cancel" />
+                          </a>
+                          <div>
+                            <h3 class="brix---heading-h3-size-3">Error!</h3>
+                          </div>
+                          <div style="color: #72517e; line-height: 20px; margin-bottom: 40px;">Your request to submit the form was unsuccessful.  Please
+                            try again.</div>
+                          <button onclick="cancelErrorPopup()" class="hover-btn" style="width: auto;">Try Again</button>
+                        </div>
+                      </div>
                 </footer>
             </div>
         </div>

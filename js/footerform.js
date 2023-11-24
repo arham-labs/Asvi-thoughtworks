@@ -1,4 +1,5 @@
-let reponse;
+let response;
+let footerErroroverlay = document.getElementById("footer-error-overlay");
 var CaptchaCallback = function () {
     grecaptcha.render('captcha1', { 'sitekey': '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud' });
     grecaptcha.render('captcha2', { 'sitekey': '6LfFbMcoAAAAALrPpcPEwPkvZrKnhNZU9s4Bg2ud' });
@@ -67,6 +68,8 @@ function validateFooterForm() {
 function sendFooterEmail() {
 
     const email = document.getElementById("footer-email").value;
+    document.getElementById('loader').classList.remove("hide");
+    document.getElementById('show-text').classList.add("hide");
 
     let params = {
         mail_type: "email_footer",
@@ -82,9 +85,13 @@ function sendFooterEmail() {
         body: JSON.stringify(params),
     })
         .then(response => {
+            console.log(response, 'res');
+            document.getElementById('loader').classList.add("hide");
+            document.getElementById('show-text').classList.remove("hide");
             if (!response.ok) {
-                alert("Failed to send mail")
+                footerErroroverlay.classList.remove("hide");
                 throw new Error("Failed to send mail");
+
             }
             else {
                 document.querySelector('body').style.overflow = "hidden";
@@ -92,6 +99,11 @@ function sendFooterEmail() {
                 document.getElementById("footer-email").value = ""
                 recaptchaFooterCheckbox = ""
             }
+        }).catch(err => {
+            document.getElementById('loader').classList.add("hide");
+            document.getElementById('show-text').classList.remove("hide");
+            console.log(err, 'err');
+            footerErroroverlay.classList.remove("hide");
         })
 
 }
@@ -99,4 +111,8 @@ function sendFooterEmail() {
 function CancelPopup() {
     overlay.classList.add("hide")
     document.querySelector('body').style.overflow = "scroll";
+}
+function cancelErrorPopup() {
+    footerErroroverlay.classList.add("hide")
+    // document.querySelector('body').style.overflow = "scroll";
 }
