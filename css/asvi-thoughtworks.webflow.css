@@ -7139,3 +7139,13 @@ a {
   background-color: rgba(232, 80, 70, .54);
   background-clip: border-box;
 }
+@media screen and (min-width: 1623px) and (max-width: 1776px){
+  .process-5-card {
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  }
+}
+@media screen and (min-width: 1778px){
+  .process-5-card {
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  }
+}
