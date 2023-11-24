@@ -36,12 +36,12 @@ try {
             );
         $mail->SMTPSecure = false;
         $mail->SMTPAutoTLS = false;
-        $mail->Host = "bom1plzcpnl503489.prod.bom1.secureserver.net";
+        $mail->Host = $mailHost;
         $mail->SMTPAuth = true;
-        $mail->Username = "_mainaccount@asvithoughtworks.com";
-        $mail->Password = "PMkc26PeLn#A";
-        $mail->SMTPSecure = "ssl";
-        $mail->Port = "465";
+        $mail->Username = $mailUsername;
+        $mail->Password = $mailPassword;
+        $mail->SMTPSecure = $mailEncryption;
+        $mail->Port = $mailPort;
 
         // Set Mail From
         $mail->setFrom("_mainaccount@asvithoughtworks.com", $mailFromName);
