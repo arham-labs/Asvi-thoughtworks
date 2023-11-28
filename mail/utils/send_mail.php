@@ -15,7 +15,7 @@ require 'mail_template.php';
 function sendMail(PHPMailer $mail, $request) : bool
 {
     // setting recipient for the mail
-    $mail->addAddress('snigdhatripathi@asvithoughtworks.com', $request['first_name'] . ' ' . $request['last_name']);
+    $mail->addAddress('info@asvithoughtworks.com', $request['first_name'] . ' ' . $request['last_name']);
 
     $mailDataArray = createMailTemplateFromMailType($request);
 
