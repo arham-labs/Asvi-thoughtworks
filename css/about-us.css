@@ -157,6 +157,12 @@
     color: #72517E;
     font-family: 'Roboto', sans-serif;
 }
+.client-logo-sec{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
 
